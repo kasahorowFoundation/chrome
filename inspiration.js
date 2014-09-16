@@ -29,7 +29,7 @@ function show() {
                                 var hour = time[1] % 12 || 12;               // The prettyprinted hour.
                                 var period = time[1] < 12 ? 'a.m.' : 'p.m.'; // The period of the day.
                                 //display the notification
-                                var n = new Notification(by + ". "+ hour + time[2] + ' ' + period, {
+                                new Notification(by + ". "+ hour + time[2] + ' ' + period, {
                                   icon: 'icon48.png',
                                   body: inspiration + "\n\n" +  day
                                 });
@@ -37,18 +37,12 @@ function show() {
     };
     xhr.send();
     
+  
 }
 
-// Conditionally initialize the options.
-if (!localStorage.isInitialized) {
-  localStorage.isActivated = true;   // The display activation.
-  localStorage.isInitialized = true; // The option initialization.
-}
 
 // Test for notification support.
 if (window.Notification) {
-  // While activated, show notifications at the display frequency.
-  //if (JSON.parse(localStorage.isActivated)) { show(); }
   
 
   //gets current time
@@ -64,4 +58,10 @@ if (window.Notification) {
   //psuh the desktop notification
   setTimeout(function(){show()}, millisTill10);
 
+} 
+else{
+
+  console.log("your window doesn't support notifications")
 }
+
+

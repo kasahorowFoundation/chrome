@@ -1,5 +1,6 @@
 
 window.addEventListener('load', function() {
+  show();
   var options = document.getElementById('options');
   if(options) {
   // Initialize the option controls.
@@ -12,14 +13,6 @@ window.addEventListener('load', function() {
     createTranslationMenu(localStorage.lang);
     updateUI(localStorage.lang);
   };
-    show();
 
   }
 });
-
-window.addEventListener("unload", function() {
-chrome.notifications.clear();
-  var bg = chrome.extension.getBackgroundPage();
-  chrome.tabs.create( { "url": "data:,popup" } );
-  bg.chrome.tabs.create( { "url": "data:,background" } );
-}, false);
