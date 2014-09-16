@@ -1,0 +1,14 @@
+body {
+	width: 22em;
+}
+
+input[type='text'] {
+	width: 10em;
+}
+p.readme {
+	text-align: center;
+}
+
+div.search-area {
+	text-align: center;
+}

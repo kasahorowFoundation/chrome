@@ -1,0 +1,35 @@
+{
+  "name": "kasahorow",
+  "short_name": "kasahorow",
+  "description": "Learn something true. Every day.",
+  "version": "2014.9.11",
+  "manifest_version": 2,
+
+  "omnibox": { "keyword" : "kw" },
+
+  "browser_action": {
+      "default_title": "kasahorow",
+      "default_icon": "icon16.png",
+      "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "contextMenus",
+    "notifications",
+    "*://*.kasahorow.org/*"
+  ],
+
+  "background": {
+    "scripts": ["common.js", "popup.js", "pictionary.js", "omnisearch.js", "inspiration.js"]
+  },
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "web_accessible_resources": [
+    "icon48.png"
+  ]
+}
