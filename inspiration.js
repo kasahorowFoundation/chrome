@@ -55,12 +55,13 @@ if (window.Notification) {
      millisTill10 += 86400000; // it's after 6am, try 6am tomorrow.
   }
   
-  //psuh the desktop notification
+  //push the desktop notification
   setTimeout(function(){show()}, millisTill10);
 
 } 
-else{
-
+else
+{
+  //if window.notification is not working properly this will run. 
   console.log("your window doesn't support notifications")
 }
 

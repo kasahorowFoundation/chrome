@@ -1,11 +1,15 @@
 
 window.addEventListener('load', function() {
-  show();
   var options = document.getElementById('options');
   if(options) {
   // Initialize the option controls.
   options.lang.value = localStorage.lang;
-                                         // The display language
+
+  //Calls show notification from inspiration.js, tht shows a notification from json feed
+  show();
+  
+
+  // The display language
 
   // Save the display language.
   options.lang.onchange = function() {
