@@ -49,6 +49,12 @@ function getData(lang) {
       data = {'url': 'http://www.fulaira.com', 'name':'Fulaira',
               'language': 'Swahili'};
       break;
+
+    case 'wo':
+    data = {'url': 'http://wo.kasahorow.org/', 'name':'Akenima',
+              'language': 'Wolof'};
+      break;
+
     case 'yo':
       data = {'url': 'http://www.monifere.com', 'name':'Monifere',
               'language': 'Yoruba'};

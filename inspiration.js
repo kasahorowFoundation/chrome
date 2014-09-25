@@ -6,7 +6,7 @@ function show() {
   var by ;
   var day ;
   var inspiration ;
-  var language = getLanguage()
+  var language = getLanguage();
   var data = getData(language); 
   console.log(data['name'] + " notifications");
 
