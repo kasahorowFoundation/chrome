@@ -61,7 +61,7 @@ function getData(lang) {
       break;
     default:
       data = {'url':'http://www.fienipa.com', 'name': 'FIENIPA',
-              'language': 'African English'};
+              'language': 'Inglish'};
       break;
   }
   return data;
@@ -70,18 +70,6 @@ function getData(lang) {
 function languageTitle(lang) {
   data = getData(lang);
   return data.name;
-}
-
-function notify() {
-  var time = /(..)(:..)/.exec(new Date());     // The prettyprinted time.
-  var hour = time[1] % 12 || 12;               // The prettyprinted hour.
-  var period = time[1] < 12 ? 'a.m.' : 'p.m.'; // The period of the day.
-  var notification = window.webkitNotifications.createNotification(
-    '16.png',                      // The image.
-    hour + time[2] + ' ' + period, // The title.
-    languageTitle(getLanguage())      // The body.
-  );
-  notification.show();
 }
 
 function translationHandler(info, tab) {
@@ -101,7 +89,6 @@ function updateUI(lang) {
   chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
   chrome.browserAction.setBadgeText({text: lang.toUpperCase()});
   chrome.tabs.create({url: data['url']+'?utm_campaign=read&utm_medium='+ lang + '&utm_source=chrome'});
-  //notify();
 }
 
 

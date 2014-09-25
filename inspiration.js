@@ -33,6 +33,7 @@ function show() {
                                   icon: 'icon48.png',
                                   body: inspiration + "\n\n" +  day
                                 });
+
             }
     };
     xhr.send();
