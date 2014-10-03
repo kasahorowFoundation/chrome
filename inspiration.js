@@ -13,7 +13,7 @@ function show() {
   var xhr = new XMLHttpRequest();
     //gets the JSON feed
   url = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome';
-  notification_url = 'http://' + language + '.kasahorow.org/';
+  notification_url = 'http://' + language + '.kasahorow.org/app/m' +'?utm_campaign=read&utm_medium='+ language + '&utm_source=chrome';
 
   console.log('Getting JSON from ' + url);  
   xhr.open("GET", url, true);
