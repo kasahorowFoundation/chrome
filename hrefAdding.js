@@ -41,12 +41,10 @@ function Replacer(x){
 
 	}
 
-	console.log("el inner +" + inner);
     $(x).replaceWith(inner);
 }
 
 function Wrapper(){
-console.log("Besm Allah");
   $(_x('//*[@id="header"]/div[3]/text()')).each(function(){
 
    Replacer(this);
@@ -66,7 +64,6 @@ console.log("Besm Allah");
 var language = "";
 chrome.runtime.sendMessage({method: "getLang"}, function(response) {
 	language= response.lang;
-	console.log("1" + language);
 	Wrapper();
 });
 
