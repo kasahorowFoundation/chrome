@@ -20,7 +20,8 @@ function _x(STR_XPATH) {
     return xnodes;
 }
 
-//xpathes to change: 
+//xpathes to change:
+//fix this, search for the selector that selects all non-linked url-s 
 //1. //*[@id="header"]/div[2]/text()
 //2. //*[@id="header"]/div[3]/text()
 //3. /html/body/nav/div
