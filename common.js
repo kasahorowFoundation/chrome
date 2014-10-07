@@ -92,6 +92,15 @@ function updateUI(lang) {
 }
 
 
+
 // Register some handlers
 
 chrome.contextMenus.onClicked.addListener(translationHandler);
+
+//TO Covert words to links, sends language to hrefAdding: 
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    if (request.method == "getLang")
+      sendResponse({lang: getLanguage()});
+    else
+      sendResponse({}); // snub them.
+});

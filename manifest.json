@@ -15,13 +15,21 @@
   "permissions": [
     "contextMenus",
     "notifications",
-    "*://*.kasahorow.org/*"
+    "*://*.kasahorow.org/*",
+    "tabs", "*://*.kasahorow.org/*"
   ],
 
   "background": {
     "scripts": ["common.js", "popup.js", "pictionary.js", "omnisearch.js", "inspiration.js"]
   },
-
+ "content_scripts": [
+    {
+      "matches": ["*://*.kasahorow.org/*"],
+      "css": [],
+      "js": ["jquery.js", "hrefAdding.js"],
+      "run_at":"document_end"
+    }
+  ],
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
