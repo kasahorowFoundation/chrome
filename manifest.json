@@ -20,7 +20,7 @@
   ],
 
   "background": {
-    "scripts": ["common.js", "pictionary.js", "omnisearch.js", "inspiration.js"]
+    "scripts": ["common.js", "pictionary.js", "omnisearch.js","jquery.js", "inspiration.js", "keyboard.js"]
   },
  "content_scripts": [
     {

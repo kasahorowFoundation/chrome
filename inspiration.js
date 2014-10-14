@@ -8,14 +8,12 @@ function show() {
   var inspiration ;
   var language = getLanguage();
   var data = getData(language); 
-  console.log(data['name'] + " notifications");
 
   var xhr = new XMLHttpRequest();
     //gets the JSON feed
   url = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome';
   notification_url = 'http://' + language + '.kasahorow.org/app/m' +'?utm_campaign=read&utm_medium='+ language + '&utm_source=chrome';
 
-  console.log('Getting JSON from ' + url);  
   xhr.open("GET", url, true);
   xhr.onreadystatechange=function() {
           //Works after getting the feed
@@ -24,7 +22,6 @@ function show() {
                  by = res["by"];
                  day = res["day"];
                  inspiration = res["inspiration"];
-                                console.log(inspiration + "\n by:" + by + " ," + day);
 
                                 //gets current time
                                 var time = /(..)(:..)/.exec(new Date());     // The prettyprinted time.

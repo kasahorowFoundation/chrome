@@ -1,14 +1,17 @@
 <html>
   <head>
     <!--Including inspiration.js in order to use show() in popup.js normally-->
+    <script type="text/javascript" src="jquery.js" ></script>
+
     <script type="text/javascript" src="inspiration.js" ></script>
+
     <title>kasahorow</title>
   </head>
 
-  <body style="max-height: 100;overflow: hidden;">
+  <body>
       <div class="search-area">
         <form id="options" action="#" method="GET">
-      <select id="lang" name="lang" style="width: 120;">
+      <select id="lang" name="lang" style="width: 180;">
         <option value='ak'>Akan</option>
         <option value='ga'>Ga-Dangme</option>
         <option value='ee'>Gbe</option>
@@ -24,23 +27,34 @@
       </select>
 
     </form>
-      </div>
-      <div>
-                    <!-- Social Links Here -->
-                        <a href="https://plus.google.com/share?url=https://chrome.google.com/webstore/detail/kasahorow/pmdjeaiebnlfpceghbmpnnhjkmepodec/related" target="_blank">
-                            <img width="35" height="35" src="http://sw.kasahorow.org/images/icon-google.gif" style="display:block;" border="0" alt="Google" title="Google" align="right">
-                        </a>  
-                        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fkasahorow%2Fpmdjeaiebnlfpceghbmpnnhjkmepodec%2Frelated" target="_blank">
-                            <img width="35" height="35" src="http://sw.kasahorow.org/images/icon-twitter.gif" style="display:block;" border="0" alt="Twitter" title="Twitter" align="right"></a>
+  </div>
+      
+  <textarea id="inputText" placeholder="Use our keyboard" style="height: 100; margin-bottom: 15px;" ></textarea>
 
-                        <a  href="https://www.facebook.com/sharer/sharer.php?u=https://chrome.google.com/webstore/detail/kasahorow/pmdjeaiebnlfpceghbmpnnhjkmepodec/related" target="_blank">
-                          <img width="35" height="35" src="http://sw.kasahorow.org/images/icon-facebook.gif" style="display:block;" border="0" alt="Facebook" title="Facebook" align="right"></a>
+
+<div style="
+    height: 50px;
+    overflow: hidden;
+    padding-left: 20%;
+    padding-right: 20%;
+">
+                    <!-- Social Links Here -->
+                        <a href="https://plus.google.com/share?url=https://chrome.google.com/webstore/detail/kasahorow/pmdjeaiebnlfpceghbmpnnhjkmepodec/related" target="_blank" style="float: left;">
+                            <img width="35" height="35" src="http://sw.kasahorow.org/images/icon-google.gif" style="display:block;" border="0" alt="Google" title="Google">
+                        </a>  
+                        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fkasahorow%2Fpmdjeaiebnlfpceghbmpnnhjkmepodec%2Frelated" target="_blank" style="float: left;">
+                            <img width="35" height="35" src="http://sw.kasahorow.org/images/icon-twitter.gif" style="display:block;" border="0" alt="Twitter" title="Twitter"></a>
+
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://chrome.google.com/webstore/detail/kasahorow/pmdjeaiebnlfpceghbmpnnhjkmepodec/related" target="_blank" style="float: left;">
+                          <img width="35" height="35" src="http://sw.kasahorow.org/images/icon-facebook.gif" style="display:block;" border="0" alt="Facebook" title="Facebook"></a>
                         <!-- End of Social Links --> 
                         
                  
-</div>
+</div>              
     <script src="common.js"></script>
     <script src="popup.js"></script>
+    <script src="keyboard.js" ></script>
+
   </body>
 </html>
 
