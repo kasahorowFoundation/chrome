@@ -54,14 +54,14 @@ if (window.Notification) {
   var now = new Date();
 
   //see the difference between current time and 6 am.
-  var millisTill10 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 6, 0, 0, 0) - now;
+  var millisTill10 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), localStorage.displayTime, 0, 0, 0) - now;
   
   if (millisTill10 < 0) {
      millisTill10 += 86400000; // it's after 6am, try 6am tomorrow.
   }
   
   //push the desktop notification
-  setTimeout(function(){show()}, millisTill10);
+  setTimeout(function(){  if(localStorage.isActivated){ show() }  }, millisTill10);
 
 } 
 else

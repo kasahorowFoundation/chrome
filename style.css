@@ -1,5 +1,10 @@
 body {
-	width: 22em;
+font-size: 16px;
+font-family: 'Rosario', sans-serif;
+margin: 0 auto;
+max-width: 1040px;
+padding: 1em;
+
 }
 
 input[type='text'] {
@@ -12,3 +17,4 @@ p.readme {
 div.search-area {
 	text-align: center;
 }
+

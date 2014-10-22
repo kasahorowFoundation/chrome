@@ -6,7 +6,7 @@ window.addEventListener('load', function() {
   options.lang.value = localStorage.lang;
 
   //Calls show notification from inspiration.js, tht shows a notification from json feed
-  show();
+  //show();
   
 
   // The display language
@@ -20,3 +20,9 @@ window.addEventListener('load', function() {
 
   }
 });
+
+
+  $('#btn').click(function(event) {
+        //action on clicking on Search button .
+       show();
+      });
