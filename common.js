@@ -9,7 +9,7 @@ function getLanguage() {
 // Conditionally initialize the options.
 if (!localStorage.isInitialized) {
   localStorage.isActivated = true;   // The display activation.
-  localStorage.frequency = 6;        // The display frequency, in minutes.
+  localStorage.displayTime = 6;        // The display localStorage.displayTime.
   localStorage.isInitialized = true; // The option initialization.
 }
 
