@@ -5,12 +5,6 @@ window.addEventListener('load', function() {
   // Initialize the option controls.
   options.lang.value = localStorage.lang;
 
-  //Calls show notification from inspiration.js, tht shows a notification from json feed
-  //show();
-  
-
-  // The display language
-
   // Save the display language.
   options.lang.onchange = function() {
     localStorage.lang = options.lang.value;
@@ -22,7 +16,14 @@ window.addEventListener('load', function() {
 });
 
 
-  $('#btn').click(function(event) {
-        //action on clicking on Search button .
-       show();
-      });
+$('#btn').click(function(event) {
+  //action on clicking on Search button .
+  show();
+});
+
+$('.share').click(function(event) {
+  var txt = $('#inputText').val();
+  var url = $(this).attr('service');
+  console.log('Share ' + txt + ' on ' + $(this).attr('service'));
+  window.open(url+encodeURIComponent(txt));
+});

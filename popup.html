@@ -1,5 +1,6 @@
 <html>
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <!--Including inspiration.js in order to use show() in popup.js normally-->
     <script type="text/javascript" src="jquery.js" ></script>
 
@@ -12,7 +13,6 @@
 
 
       <div style="width: 180px;" class="search-area">
-        <button style="width: 180px;" id="btn">Inspiration message</button>
 
         <form id="options" action="#" method="GET">
       <select id="lang" name="lang" style="width: 180;">
@@ -32,16 +32,17 @@
 
     </form>
   </div>
+        <button style="width: 180px;" id="btn">Read</button>
       
-  <textarea id="inputText" placeholder="Use our keyboard" style="height: 100; margin-bottom: 15px;" ></textarea>
+  <textarea id="inputText" placeholder="Write" style="height: 100; margin-bottom: 15px; width:180px;" ></textarea>
 
 
 <div style="
-    height: 50px;
+    height: 35px;
     overflow: hidden;
-    padding-left: 20%;
-    padding-right: 20%;
+    text-align:center;
 ">
+
                     <!-- Social Links Here -->
                         <a href="https://plus.google.com/share?url=https://chrome.google.com/webstore/detail/kasahorow/pmdjeaiebnlfpceghbmpnnhjkmepodec/related" target="_blank" style="float: left;">
                             <img width="35" height="35" src="http://sw.kasahorow.org/images/icon-google.gif" style="display:block;" border="0" alt="Google" title="Google">
@@ -55,6 +56,8 @@
                         <!-- End of Social Links --> 
                         
                  
+
+  <img width="35" height="35" src="http://sw.kasahorow.org/images/icon-twitter.gif" style="display:block; margin: 0 auto;" border="0" alt="Twitter" title="Tweet" class="share" service="https://twitter.com/intent/tweet?url=https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fkasahorow%2Fpmdjeaiebnlfpceghbmpnnhjkmepodec&text=" />
 </div>              
     <script src="common.js"></script>
     <script src="popup.js"></script>
