@@ -1,4 +1,3 @@
-
 window.addEventListener('load', function() {
   var options = document.getElementById('options');
   if(options) {
@@ -17,13 +16,13 @@ window.addEventListener('load', function() {
 
 
 $('#btn').click(function(event) {
-  //action on clicking on Search button .
+  //action on clicking on showing notification button .
   show();
 });
 
 $('.share').click(function(event) {
   var txt = $('#inputText').val();
   var url = $(this).attr('service');
-  console.log('Share ' + txt + ' on ' + $(this).attr('service'));
+  //console.log('Share ' + txt + ' on ' + $(this).attr('service'));
   window.open(url+encodeURIComponent(txt));
 });

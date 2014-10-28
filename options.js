@@ -21,6 +21,5 @@ window.addEventListener('load', function() {
 
   options.displayTime.onchange = function() {
     localStorage.displayTime = options.displayTime.value;
-    alert(localStorage.displayTime);
   };
 });

@@ -69,5 +69,3 @@ else
   //if window.notification is not working properly this will run. 
   console.log("your window doesn't support notifications")
 }
-
-

@@ -26,7 +26,7 @@
     {
       "matches": ["*://*.kasahorow.org/*"],
       "css": [],
-      "js": ["jquery.js", "hrefAdding.js"],
+      "js": ["jquery.js", "pictionary.js"],
       "run_at":"document_end"
     }
   ],
