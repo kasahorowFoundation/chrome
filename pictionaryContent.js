@@ -36,7 +36,6 @@ function Replacer(x){
 
 var language = "";
 chrome.runtime.sendMessage({method: "getLang"}, function(response) {
-  alert("I work on this page");
 	language= response.lang;
   Replacer(document.body);
 
