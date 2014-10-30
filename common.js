@@ -53,6 +53,19 @@ function getData(lang) {
       data = {'url': 'http://ln.kasahorow.org', 'name':'Lingala kasahorow',
               'language': 'Lingala'};
       break;
+
+        case 'rw':
+      data = {'url': 'http://rw.kasahorow.org/', 'name':'URURIMI',
+              'language': 'Ururimi'};
+      break;
+
+
+    case 'sn':
+      data = {'url': 'http://sn.kasahorow.org/', 'name':'Shona kasahorow',
+              'language': 'Shona'};
+      break;
+
+
     case 'sw':
       data = {'url': 'http://www.fulaira.com', 'name':'Fulaira',
               'language': 'Swahili'};
@@ -63,10 +76,13 @@ function getData(lang) {
               'language': 'Wolof'};
       break;
 
+  
+
     case 'yo':
       data = {'url': 'http://www.monifere.com', 'name':'Monifere',
               'language': 'Yoruba'};
       break;
+
     default:
       data = {'url':'http://www.fienipa.com', 'name': 'FIENIPA',
               'language': 'Inglish'};
