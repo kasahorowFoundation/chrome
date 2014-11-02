@@ -18,7 +18,7 @@ function getData(lang) {
   var data;
   switch(lang){
     case 'ak':
-      data = {'url': 'http://www.nyamfowa.com', 'name':'Nyamfowa',
+      data = {'url': 'http://ak.kasahorow.org', 'name':'Nyamfowa',
               'language': 'Akan'};
       break;
     case 'ee':
@@ -34,15 +34,15 @@ function getData(lang) {
               'language': 'Ga-Dangbe'};
       break;
     case 'ha':
-      data = {'url': 'http://www.barkadar.com', 'name':'Barkadar',
+      data = {'url': 'http://ha.kasahorow.org', 'name':'Barkadar',
               'language': 'Hausa'};
       break;
     case 'ig':
-      data = {'url': 'http://www.nabanya.com', 'name':'Nabanya',
+      data = {'url': 'http://ig.kasahorow.org', 'name':'Nabanya',
               'language': 'Igbo'};
       break;
     case 'ki':
-      data = {'url': 'http://www.waikeno.com', 'name':'Waikeno',
+      data = {'url': 'http://ki.kasahorow.org', 'name':'Waikeno',
               'language': 'Gikuyu'};
       break;
     case 'lg':
@@ -54,37 +54,37 @@ function getData(lang) {
               'language': 'Lingala'};
       break;
 
-        case 'rw':
-      data = {'url': 'http://rw.kasahorow.org/', 'name':'URURIMI',
+    case 'rw':
+      data = {'url': 'http://rw.kasahorow.org', 'name':'Ururimi',
               'language': 'Ururimi'};
       break;
 
 
     case 'sn':
-      data = {'url': 'http://sn.kasahorow.org/', 'name':'Shona kasahorow',
+      data = {'url': 'http://sn.kasahorow.org', 'name':'Shona kasahorow',
               'language': 'Shona'};
       break;
 
 
     case 'sw':
-      data = {'url': 'http://www.fulaira.com', 'name':'Fulaira',
+      data = {'url': 'http://sw.kasahorow.org', 'name':'Fulaira',
               'language': 'Swahili'};
       break;
 
     case 'wo':
-    data = {'url': 'http://wo.kasahorow.org/', 'name':'Akenima',
+      data = {'url': 'http://wo.kasahorow.org', 'name':'Akenima',
               'language': 'Wolof'};
       break;
 
   
 
     case 'yo':
-      data = {'url': 'http://www.monifere.com', 'name':'Monifere',
+      data = {'url': 'http://yo.kasahorow.org', 'name':'Monifere',
               'language': 'Yoruba'};
       break;
 
     default:
-      data = {'url':'http://www.fienipa.com', 'name': 'FIENIPA',
+      data = {'url':'http://en.kasahorow.org', 'name': 'FIENIPA',
               'language': 'Inglish'};
       break;
   }
