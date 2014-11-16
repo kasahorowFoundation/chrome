@@ -23,7 +23,8 @@ function getMaps(lang){
   } //what about the rest of languages?!!
   return maps;
 }
-//jquery.caret.min.js
+
+//https://github.com/accursoft/caret
 (function($) {
   $.fn.caret = function(pos) {
     var target = this[0];
