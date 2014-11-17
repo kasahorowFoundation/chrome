@@ -105,18 +105,29 @@ function getMaps(lang){
   }
 })(jQuery);
 
+function showHints(letterSubs) {
+  hints = "";
+  for(k in letterSubs) {
+    hints+= k + "=" + letterSubs[k] + " ";
+  }
+  return hints;
+}
 
 
-
-var pl = getLanguage();
+try{
+  var pl = getLanguage();
+}catch(e){
+  var pl = document.documentElement.lang;
+  console.log('getLanguage() not defined so getting language from document');
+}
 var letterSubs = getMaps(pl);
 
 try{
-$(document).ready(function(event){
+  $(document).ready(function(event){
     $(document).delegate("input, textarea", "keyup", function(event){
+        $(this).attr("title", showHints(letterSubs));
         var cleanedValue = $(this).val();
         var caretPos =  $(this).caret();
-console.log(caretPos);
         for(var l in letterSubs){
           cleanedValue = cleanedValue.replace(l, letterSubs[l]) ;
         }
