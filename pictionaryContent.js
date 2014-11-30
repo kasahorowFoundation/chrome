@@ -27,15 +27,15 @@ function Replacer(x, language){
       {
         if (kids[j].nodeType == 3)
           ReplaceText(kids[j], language);
-        else if(typeof kids[j].tagName === 'undefined')
-            Replacer(kids[j], language);
-        else if (kids[j].tagName.toLowerCase() != "a")
-          Replacer(kids[j], language);
+        
+        else if(typeof kids[j].tagName != 'undefined')
+        { 
+            if (kids[j].tagName.toLowerCase() != "a")
+              Replacer(kids[j], language);
+        }
       }
   }
    
-
-
 
 var language = "";
 chrome.runtime.sendMessage({method: "getLang"}, function(response) {
