@@ -31,7 +31,11 @@ function Replacer(x, language){
         else if(typeof kids[j].tagName != 'undefined')
         { 
             if (kids[j].tagName.toLowerCase() != "a")
+              if (kids[j].tagName.toLowerCase() != "textarea"){
+                if (kids[j].tagName.toLowerCase() != "input"){
               Replacer(kids[j], language);
+            }
+            }
         }
       }
   }
