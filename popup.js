@@ -26,3 +26,4 @@ $('.share').click(function(event) {
   //console.log('Share ' + txt + ' on ' + $(this).attr('service'));
   window.open(url+encodeURIComponent(txt));
 });
+

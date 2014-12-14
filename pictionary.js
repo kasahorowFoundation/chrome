@@ -1,10 +1,10 @@
 
 if(localStorage.lang) {
   createTranslationMenu(localStorage.lang);
-  updateUI(localStorage.lang);
+  updateUIonly(localStorage.lang);
 } else {
   createTranslationMenu('ak');
-  updateUI('ak');
+  updateUIonly('ak');
 }
 var langdata = getData(localStorage.lang);
 

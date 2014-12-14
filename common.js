@@ -115,6 +115,14 @@ function updateUI(lang) {
   chrome.tabs.create({url: data['url']+'/app/b?utm_campaign=read&utm_medium='+ lang + '&utm_source=chrome'});
 }
 
+function updateUIonly(lang) {
+  data = getData(lang);
+  //chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
+  //chrome.browserAction.setBadgeText({text: lang.toUpperCase()});
+  //chrome.tabs.create({url: data['url']+'/app/b?utm_campaign=read&utm_medium='+ lang + '&utm_source=chrome'});
+}
+
+
 
 
 // Register some handlers
