@@ -1,4 +1,3 @@
-
 if(localStorage.lang) {
   createTranslationMenu(localStorage.lang);
   updateUIonly(localStorage.lang);

@@ -24,6 +24,6 @@ $('.share').click(function(event) {
   var txt = $('#inputText').val();
   var url = $(this).attr('service');
   //console.log('Share ' + txt + ' on ' + $(this).attr('service'));
-  window.open(url+encodeURIComponent(txt));
+  window.open(url+encodeURIComponent(txt)+ " @kasahorow");
 });
 
