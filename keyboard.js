@@ -125,6 +125,7 @@ var letterSubs = getMaps(pl);
 
 try{
   $(document).ready(function(event){
+    $('textarea, input').each(function(){ $(this).attr("placeholder", $(this).attr("placeholder") + ': ' + showHints(letterSubs));});
     $(document).delegate("input, textarea", "keyup", function(event){
         $(this).attr("title", showHints(letterSubs));
         var cleanedValue = $(this).val();
