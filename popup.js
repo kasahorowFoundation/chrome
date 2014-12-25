@@ -23,7 +23,7 @@ $('#btn').click(function(event) {
 $('.share').click(function(event) {
   var txt = $('#inputText').val();
   var url = $(this).attr('service');
-  //console.log('Share ' + txt + ' on ' + $(this).attr('service'));
-  window.open(url+encodeURIComponent(txt)+ " @kasahorow");
+  var data = getData(localStorage.lang);
+  window.open(url+encodeURIComponent(txt)+ "#"+data["language"]+" @kasahorow");
 });
 
