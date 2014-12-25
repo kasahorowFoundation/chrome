@@ -1,4 +1,5 @@
 window.addEventListener('load', function() {
+
   var options = document.getElementById('options');
   if(options) {
   // Initialize the option controls.
@@ -12,6 +13,8 @@ window.addEventListener('load', function() {
   };
 
   }
+    getNotification();
+
 });
 
 
@@ -27,3 +30,28 @@ $('.share').click(function(event) {
   window.open(url+encodeURIComponent(txt)+ " %23"+data["language"]+" %23kasahorow @kasahorow");
 });
 
+
+
+function getNotification(){
+  url_link = 'http://' + localStorage.lang + '.kasahorow.org/app/m?format=json&source=chrome';
+
+          $.ajax({
+              url:url_link, 
+              dataType:"JSON",
+              async:false,
+              success:function(r){ 
+          
+
+          $('#by').text("by: " + r["by"]);
+          $('#inspiration').text("inspiration: " + r["inspiration"]);
+          $('#day').text("day: "+ r["day"]);
+
+            
+
+              }
+
+
+          });
+
+          //return r;
+ }
