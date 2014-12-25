@@ -24,6 +24,6 @@ $('.share').click(function(event) {
   var txt = $('#inputText').val();
   var url = $(this).attr('service');
   var data = getData(localStorage.lang);
-  window.open(url+encodeURIComponent(txt)+ "#"+data["language"]+" @kasahorow");
+  window.open(url+encodeURIComponent(txt)+ " %23"+data["language"]+" @kasahorow");
 });
 
