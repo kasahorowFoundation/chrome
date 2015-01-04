@@ -13,13 +13,14 @@ window.addEventListener('load', function() {
   };
 
   }
-    getNotification();
+    
 
 });
 
 
 $('#btn').click(function(event) {
   //action on clicking on showing notification button .
+  getNotification();
   show();
 });
 
@@ -52,6 +53,6 @@ function getNotification(){
 
 
           });
-
+$('#notification').show().fadeIn(500);
           //return r;
  }

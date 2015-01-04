@@ -1,0 +1,50 @@
+#logo{
+	width:160px;
+	padding: 10px;
+    padding-bottom: 30px;
+}
+
+
+
+
+#options select {
+	outline:0;
+		border: 0 !important;  /*Removes border*/
+		-webkit-appearance: none;  /*Removes default chrome and safari style*/
+		-moz-appearance: none; /* Removes Default Firefox style*/
+		background: #5E6C73 url(http://www.clker.com/cliparts/y/m/X/o/s/R/down-arrow-circle-hi.png) no-repeat 90% center;
+		width: 100px; /*Width of select dropdown to give space for arrow image*/
+		text-indent: 0.01px; /* Removes default arrow from firefox*/
+		text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
+		color: #FFF;
+		padding: 5px;
+		box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
+		border-radius: 10px 0;
+		background-size: 15px;
+
+	}
+
+/* Gradient transparent - color - transparent */
+		
+hr{
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+/*
+
+.container{
+	background-color:#5E6C73;
+width: 300px;
+margin: 0px;
+left: 0px;
+top: 117;
+border: 0px;
+padding: 0px;
+}
+
+*/

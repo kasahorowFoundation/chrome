@@ -3,6 +3,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <script type="text/javascript" src="jquery.js" ></script>
 
+    <link href="popup.css" rel="stylesheet" type="text/css">
+
     <script type="text/javascript" src="inspiration.js" ></script>
 
     <title>kasahorow</title>
@@ -10,8 +12,8 @@
 
   <body style="width: 185px;" >
 
-
     <div style="width: 180px;" class="search-area">
+  <img src="http://ak.kasahorow.org/images/k/kasahorow_logo.png" id="logo"></img>
 
       <form id="options" action="#" method="GET">
         <select id="lang" name="lang" style="width: 180;">
@@ -33,16 +35,18 @@
 
       </form>
     </div>
+<hr/>
 
-    <div id="notification">
+<div class="container">
+
+        <button style="width: 180px;" id="btn">Read</button>
+        <div id="notification" hidden="hidden">
     Notification <br/><br/><br/>
       <span id="by"></span><br/><br/>
       <span id="day"></span><br/><br/>
       <span id="inspiration"></span><br/><br/>
 
-    </div>
-        <button style="width: 180px;" id="btn">Read</button>
-      
+    </div> 
   <textarea id="inputText" placeholder="Write" style="height: 100; margin-bottom: 15px; width:180px;" ></textarea>
 
 
@@ -56,6 +60,6 @@
     <script src="common.js"></script>
     <script src="popup.js"></script>
     <script src="keyboard.js" ></script>
-
+</div>
   </body>
 </html>
