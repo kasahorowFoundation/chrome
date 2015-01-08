@@ -1,3 +1,12 @@
+body{
+	width: 185px;
+	margin: 0px;
+}
+
+.search-area{
+
+}
+
 #logo{
 	width:160px;
 	padding: 10px;
@@ -5,7 +14,17 @@
 }
 
 
+#inputText{
+	height: 100px;
+	 margin-bottom: 15px;
+	  width:180px;"
+}
 
+#footer{
+	 height: 35px;
+    overflow: hidden;
+    text-align:center;
+}
 
 #options select {
 	outline:0;
@@ -33,6 +52,7 @@ hr{
     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    margin-bottom: 0px;
 }
 
 /*
@@ -48,3 +68,14 @@ padding: 0px;
 }
 
 */
+
+
+
+.container
+{	padding-top: 5px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
+	background-color: gainsboro;
+
+
+}
+
