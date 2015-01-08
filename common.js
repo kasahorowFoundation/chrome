@@ -110,13 +110,15 @@ function createTranslationMenu(lang) {
 
 function updateUI(lang) {
   data = getData(lang);
-  chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
-  chrome.browserAction.setBadgeText({text: lang.toUpperCase()});
+  //chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
+  chrome.browserAction.setBadgeText({text: lang.toUpperCase()});   
   chrome.tabs.create({url: data['url']+'/app/b?utm_campaign=read&utm_medium='+ lang + '&utm_source=chrome'});
 }
 
 function updateUIonly(lang) {
+
   data = getData(lang);
+
   //chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
   //chrome.browserAction.setBadgeText({text: lang.toUpperCase()});
   //chrome.tabs.create({url: data['url']+'/app/b?utm_campaign=read&utm_medium='+ lang + '&utm_source=chrome'});
@@ -136,3 +138,35 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     else
       sendResponse({}); // snub them.
 });
+
+
+
+
+  
+
+
+// Change date daily
+
+//gets current time
+var now = new Date();
+
+//see the difference between current time and 12 (0) am.
+var millisTill10 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0) - now;
+  
+if (millisTill10 < 0) {
+    millisTill10 += 86400000; // it's after 6am, try 6am tomorrow.
+}
+  
+//change UI
+setTimeout(function(){  if(localStorage.isActivated){ changeBadgeText() }  }, millisTill10);
+
+
+
+changeBadgeText();
+function changeBadgeText()
+{
+  var now = new Date();
+  var today= now.getDate()+"";
+  chrome.browserAction.setBadgeText({text: today});
+  console.log("print");
+}
