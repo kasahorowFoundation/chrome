@@ -14,11 +14,6 @@ body{
 }
 
 
-#inputText{
-	height: 100px;
-	 margin-bottom: 15px;
-	  width:250px;"
-}
 
 #footer{
 	 height: 35px;
@@ -112,3 +107,25 @@ hr{
 	color:grey;
 	padding-left:1%;
 }
+
+#inputText{
+
+	height: 100px;
+	 margin-bottom: 15px;
+	  width:250px;"
+
+    border: 1px solid #B9BDC1;
+    color: #797979;
+    -moz-box-shadow: 0 2px 4px #bbb inset;
+    -webkit-box-shadow: 0 2px 4px #BBB inset;
+    box-shadow: 0 2px 4px #BBB inset;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+     resize: none;
+}
+#inputText:focus {
+    outline: 0;
+}
+
+ 

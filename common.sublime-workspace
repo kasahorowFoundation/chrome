@@ -1,0 +1,1225 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"res",
+				"result_len"
+			],
+			[
+				"wh",
+				"while	while ... end"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"sea",
+				"searchquery"
+			],
+			[
+				"li",
+				"licensekey"
+			],
+			[
+				"sign",
+				"signout"
+			],
+			[
+				"lo",
+				"login"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"chrom",
+				"chrome_key"
+			],
+			[
+				"inpu",
+				"inputText"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"cl",
+				"click"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"cham",
+				"champion"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"input",
+				"inputblock"
+			],
+			[
+				"pass",
+				"pass_input"
+			],
+			[
+				"k",
+				"contract_key"
+			],
+			[
+				"con",
+				"contract_id"
+			],
+			[
+				"p",
+				"password_confirmation"
+			],
+			[
+				"vali",
+				"valid_user"
+			],
+			[
+				"end",
+				"end_date"
+			],
+			[
+				"en",
+				"end_date"
+			],
+			[
+				"in",
+				"information"
+			],
+			[
+				"ac",
+				"access_token"
+			],
+			[
+				"resul",
+				"results"
+			],
+			[
+				"limi",
+				"limit_value"
+			],
+			[
+				"resu",
+				"results_length"
+			],
+			[
+				"to",
+				"toString"
+			],
+			[
+				"key",
+				"keysbyValue"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"a",
+				"acccess_token"
+			],
+			[
+				"match",
+				"matches"
+			],
+			[
+				"champ",
+				"championTeams"
+			],
+			[
+				"sel",
+				"select2"
+			],
+			[
+				"rand",
+				"rand_password"
+			],
+			[
+				"admin",
+				"admin_users"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"tra",
+				"training_coach"
+			],
+			[
+				"ended",
+				"ended_at"
+			],
+			[
+				"fil",
+				"filter"
+			],
+			[
+				"date",
+				"date_picker"
+			],
+			[
+				"deci",
+				"decision_taker"
+			],
+			[
+				"act",
+				"activity_type"
+			],
+			[
+				"student",
+				"studentFaculty"
+			],
+			[
+				"op",
+				"opinion"
+			],
+			[
+				"val",
+				"validates_presence_of"
+			],
+			[
+				"acti",
+				"activity_id"
+			],
+			[
+				"me",
+				"message1"
+			],
+			[
+				"mes",
+				"message"
+			],
+			[
+				"mess",
+				"message1"
+			],
+			[
+				"activi",
+				"activity"
+			],
+			[
+				"tool",
+				"tool_id"
+			],
+			[
+				"too",
+				"tool_id"
+			],
+			[
+				"col",
+				"column"
+			],
+			[
+				"main",
+				"maintenance"
+			],
+			[
+				"buil",
+				"building"
+			],
+			[
+				"no",
+				"no_of_clothes_rooms"
+			],
+			[
+				"lan",
+				"language"
+			],
+			[
+				"get",
+				"getLanguage"
+			],
+			[
+				"dict",
+				"dictTbl"
+			],
+			[
+				"dic",
+				"dictTbl"
+			],
+			[
+				"isl",
+				"islands"
+			],
+			[
+				"b",
+				"bark"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"word",
+				"wordListThree"
+			],
+			[
+				"beer",
+				"beerNum"
+			],
+			[
+				"bee",
+				"beerNum"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"sort",
+				"Sort Lines"
+			],
+			[
+				"sor",
+				"Set Syntax: Ruby on Rails"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/application.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/tmp/cache/assets/development/sass/c295b4913a7701089c2e186510a3b3ccdf5b1435/_asset-pipeline.scssc",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/initializers/active_admin.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/controllers/users_controller.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config.ru",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/controllers/concerns/.keep",
+		"/home/nuha/Documents/Interest Sniper /IS-Extension/js/popup.js",
+		"/home/nuha/Documents/Interest Sniper /IS-Extension/manifest.json",
+		"/home/nuha/Documents/Interest Sniper /theme/themeforest-5825007-brooklyn-creative-portfolio-page-html/Brooklyn-HTML/Version 1.2/amethyst/index.htm",
+		"/home/nuha/Documents/Interest Sniper /theme/themeforest-5825007-brooklyn-creative-portfolio-page-html/Brooklyn-HTML/Version 1.2/amethyst/js/jquery.parallax.min.js",
+		"/home/nuha/Desktop/n.jpg",
+		"/home/nuha/Documents/Interest Sniper /IS-Extension/css/sniper.css",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/assets/stylesheets/simple.css",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/.gitignore",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/views/users/new.html.erb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/models/user.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/assets/stylesheets/application.css",
+		"/home/nuha/Desktop/notesAwesomeforInterestSniper.txt",
+		"/home/nuha/Documents/Interest Sniper /IS-Extension/js/main.js",
+		"/home/nuha/Documents/Interest Sniper /IS-Extension/js/Sniper.js",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/routes.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/admin/contract.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/admin/user.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/tmp/cache/assets/development/sass/a9c84867874f53ada425b203e6a8180affa8587c/_user-select.scssc",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/controllers/home_controller.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/controllers/application_controller.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/tmp/cache/assets/development/sass/e5934bd91dcb559fe63b43b450866f4aec006673/_transition-property-name.scssc",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/test/models/contract_test.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/Rakefile",
+		"/home/nuha/repo le3b/app/views/student_profile/lendings.html.erb",
+		"/home/nuha/repo le3b/db/migrate/20151128112944_create_champions_teams.rb",
+		"/home/nuha/repo le3b/db/migrate/20151128112942_create_champions.rb",
+		"/home/nuha/repo le3b/db/migrate/20151128112945_create_table_matches_teams.rb",
+		"/home/nuha/repo le3b/db/migrate/20151128112943_create_matches.rb",
+		"/home/nuha/repo le3b/app/views/student_profile/matches.html.erb",
+		"/home/nuha/repo le3b/test/models/match_test.rb",
+		"/home/nuha/repo le3b/test/fixtures/matches.yml",
+		"/home/nuha/repo le3b/app/models/match.rb",
+		"/home/nuha/repo le3b/app/admin/match.rb",
+		"/home/nuha/repo le3b/app/controllers/champions_controller.rb",
+		"/home/nuha/repo le3b/app/controllers/teams_controller.rb",
+		"/home/nuha/repo le3b/test/fixtures/champions.yml",
+		"/home/nuha/repo le3b/app/models/champion.rb",
+		"/home/nuha/repo le3b/app/admin/champion.rb",
+		"/home/nuha/repo le3b/config/application.rb",
+		"/home/nuha/repo le3b/app/views/activities/_activity.html.erb",
+		"/home/nuha/repo le3b/app/assets/javascripts/ajaxCalls.js",
+		"/home/nuha/repo le3b/config/routes.rb",
+		"/home/nuha/repo le3b/app/views/champions/teams.js.erb",
+		"/home/nuha/repo le3b/test/models/champion_test.rb",
+		"/home/nuha/repo le3b/app/controllers/complains_controller.rb",
+		"/home/nuha/repo le3b/app/admin/team.rb",
+		"/home/nuha/repo le3b/tmp/cache/assets/development/sass/440f648275a7aae5dd0e5c7cd6b167641bdb3171/_component-animations.scssc",
+		"/home/nuha/repo le3b/app/admin/complain.rb",
+		"/home/nuha/repo le3b/test/models/admin_user_test.rb",
+		"/home/nuha/repo le3b/app/admin/admin_user.rb",
+		"/home/nuha/repo le3b/tmp/cache/assets/development/sass/a9c84867874f53ada425b203e6a8180affa8587c/_user-select.scssc",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/test/models/user_test.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/test/fixtures/users.yml",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/models/contract.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/views/layouts/application.html.erb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/views/layouts/_messages.html.erb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/views/layouts/_navigation.html.erb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/views/layouts/_navigation_links.html.erb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/views/home/index.html.erb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/db/schema.rb",
+		"/home/nuha/repo le3b/app/admin/student.rb",
+		"/home/nuha/repo le3b/app/admin/student_activity.rb",
+		"/home/nuha/repo le3b/app/models/student.rb",
+		"/home/nuha/repo le3b/app/admin/institution.rb",
+		"/home/nuha/repo le3b/app/controllers/activities_controller.rb",
+		"/home/nuha/repo le3b/app/admin/activity.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/Gemfile",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/environments/test.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/tmp/cache/assets/development/sprockets/ea4d7985568fc1bd2fc3228d5d7fc0e8",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/test/fixtures/admin_users.yml",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/db/migrate/20141226121347_create_contracts.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/db/migrate/20141226042103_create_companies.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/db/migrate/20141226131717_create_users.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/models/company.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/admin/user.db",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/public/assets/just_datetime_picker/nested_form_workaround-b6586c2322eef87a4a6c8944385907f1.js",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/tmp/cache/assets/development/sass/1fa4278626721f53561834fb52c591e5b835b159/_unsupported_browser.scssc",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/tmp/cache/assets/development/sass/e5934bd91dcb559fe63b43b450866f4aec006673/_strip-units.scssc",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/tmp/cache/assets/development/sass/1fa4278626721f53561834fb52c591e5b835b159/_status_tags.scssc",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/admin/company.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/test/fixtures/companies.yml",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/tmp/cache/assets/development/sass/1fa4278626721f53561834fb52c591e5b835b159/_modal_dialog.scssc",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/db/migrate/20141226023129_create_active_admin_comments.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/locales/en.yml",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/locales/devise.en.yml",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/test/fixtures/contracts.yml",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/database.yml",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/secrets.yml",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/app/admin/admin_user.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/environment.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/initializers/mime_types.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/environments/production.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/config/initializers/wrap_parameters.rb",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/db/migrate/20141226041334_create_companies.rb",
+		"/home/nuha/repo le3b/README.rdoc",
+		"/home/nuha/Documents/Interest Sniper /InterestSniper/test/models/company_test.rb",
+		"/home/nuha/Documents/Interest Sniper /interest_sniper/Gemfile",
+		"/home/nuha/Documents/Interest Sniper /interest_sniper/config/database.yml",
+		"/home/nuha/repo le3b/Gemfile",
+		"/home/nuha/Documents/Interest Sniper /interest_sniper/config/initializers/active_admin.rb",
+		"/home/nuha/Documents/Interest Sniper /css/sniper.css",
+		"/home/nuha/Documents/Interest Sniper /js/main.js",
+		"/home/nuha/Documents/Interest Sniper /interest_sniper/app/controllers/application_controller.rb",
+		"/home/nuha/Documents/Interest Sniper /interest_sniper/config/application.rb",
+		"/home/nuha/Documents/Interest Sniper /js/popup.js",
+		"/home/nuha/Documents/Interest Sniper /manifest.json",
+		"/home/nuha/Documents/Interest Sniper /readme.txt",
+		"/home/nuha/Documents/Repo/youth_care/app/assets/stylesheets/active_admin.css.scss",
+		"/home/nuha/Documents/Repo/youth_care/db/migrate/20141102082711_create_active_admin_comments.rb",
+		"/home/nuha/Documents/Repo/youth_care/app/admin/activity.rb",
+		"/home/nuha/Documents/Repo/youth_care/config/locales/ar.active_record.yml",
+		"/home/nuha/Documents/Repo/youth_care/config/database.yml",
+		"/home/nuha/Documents/Repo/Interest Sniper/Helpers/interestS-css/__MACOSX/interestS-css/._Window 3",
+		"/home/nuha/Documents/Repo/Interest Sniper/Helpers/interestS-css/__MACOSX/._interestS-css",
+		"/home/nuha/Documents/Repo/Interest Sniper/Helpers/icons/logos.ai",
+		"/home/nuha/Documents/Repo/Interest Sniper/manifest.json",
+		"/home/nuha/Documents/Repo/Interest Sniper/js/main.js",
+		"/home/nuha/Documents/Repo/Interest Sniper/js/trial.js",
+		"/home/nuha/Documents/Repo/Interest Sniper/js/delete.js",
+		"/home/nuha/Documents/Repo/Interest Sniper/Helpers/New Project 1.m4v",
+		"/home/nuha/Documents/Repo/kasahorowFoundation-chrome/chrome/keyboard.js",
+		"/home/nuha/Documents/Repo/kasahorowFoundation-chrome/chrome/manifest.json"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/nuha/repo le3b/app/admin",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getNotification()",
+			"btn",
+			"width",
+			".signout",
+			"signout",
+			".button input",
+			"input",
+			"0px",
+			"input",
+			"0px",
+			".access",
+			"license",
+			"getNotification",
+			"signout\").show",
+			"line",
+			"underline",
+			"close",
+			"signed",
+			"signin",
+			"signedin",
+			"license_key",
+			"copy",
+			"sendRequest",
+			"sortHashTOArray",
+			"AccessToken",
+			"localStorage",
+			"searchable",
+			"searchhable",
+			"Login",
+			"pure",
+			"login",
+			"championSelect",
+			"championStudents",
+			"championSelect",
+			"inputblock",
+			"absol",
+			"nested",
+			"where",
+			"nav",
+			".count",
+			"activit",
+			"i",
+			"ids",
+			"nested",
+			"dashboard:",
+			" activerecord:",
+			"dashboard",
+			"company",
+			"protected_attributes",
+			"ruby \"2.1.5\"",
+			"ruby",
+			"rails",
+			"var",
+			"inputText",
+			"padding",
+			"st1",
+			"comment",
+			"comments",
+			"config.allow",
+			"butterfly",
+			"results",
+			"var letters",
+			"          var letters = [\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"r\",\"s\",\"t\",\"u\",\"v\",\"x\",\"y\",\"z\",\"w\",\"q\"];\n          var letters = [\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"i\",\"j\",\"k\",\"l\",\"m\",\"n\",\"o\",\"p\",\"r\",\"s\",\"t\",\"u\",\"v\",\"x\",\"y\",\"z\",\"w\",\"q\"];\nvar letters",
+			"onMessage",
+			"getAdFBinterestSugguest",
+			"txt",
+			"access_token",
+			"Fetch",
+			"NormalCharacterStyle",
+			"acces",
+			"height",
+			"audie",
+			"alert",
+			"copyToClipboard",
+			"chrome.",
+			"2%",
+			"btn",
+			".radio",
+			"radius",
+			"round",
+			".png",
+			".class",
+			"line-",
+			"16px",
+			"161",
+			"font",
+			"console",
+			"copyToClipboard",
+			"label",
+			"15px",
+			"alert",
+			"150",
+			"getAdFBinterest",
+			"check",
+			"checkbox",
+			"action",
+			"rad",
+			"key",
+			"\"access_token\":\"",
+			"getAdFBinterest",
+			"$(",
+			"$('",
+			"getEleme",
+			"updateUI",
+			"utm_campaign=read",
+			".url",
+			"getData(lang).url",
+			"getData(localStorage.lang).url",
+			"getData",
+			"drawing",
+			"repaint()",
+			"Circle",
+			"Capture",
+			"research",
+			"match",
+			"match:",
+			"alert",
+			"escape_javascript",
+			"championTeams",
+			"champtionTeams",
+			"champion_Teams",
+			"championTeams",
+			"allTeams",
+			"teams",
+			"championSelect",
+			".where",
+			"studentSelect",
+			"studentActivitiesGet"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "common.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"popup",
+				"popup.js"
+			],
+			[
+				"pop",
+				"popup.html"
+			],
+			[
+				"application.html.erb",
+				"InterestSniper/app/views/layouts/application.html.erb"
+			],
+			[
+				"controller",
+				"InterestSniper/app/controllers/application_controller.rb"
+			],
+			[
+				"mani",
+				"IS-Extension/manifest.json"
+			],
+			[
+				".css",
+				"IS-Extension/css/sniper.css"
+			],
+			[
+				"new",
+				"InterestSniper/app/views/users/new.html.erb"
+			],
+			[
+				"user",
+				"InterestSniper/app/models/user.rb"
+			],
+			[
+				"control",
+				"InterestSniper/app/controllers/users_controller.rb"
+			],
+			[
+				"route",
+				"InterestSniper/config/routes.rb"
+			],
+			[
+				"sni",
+				"js/Sniper.js"
+			],
+			[
+				"main",
+				"js/main.js"
+			],
+			[
+				"buil",
+				"app/admin/building.rb"
+			],
+			[
+				"lend",
+				"app/admin/lending.rb"
+			],
+			[
+				"match",
+				"app/admin/match.rb"
+			],
+			[
+				"cha",
+				"app/controllers/champions_controller.rb"
+			],
+			[
+				"aja",
+				"app/assets/javascripts/ajaxCalls.js"
+			],
+			[
+				"champion",
+				"app/controllers/champions_controller.rb"
+			],
+			[
+				"cham",
+				"app/admin/champion.rb"
+			],
+			[
+				"team",
+				"app/controllers/teams_controller.rb"
+			],
+			[
+				"ma",
+				"app/admin/match.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"ajax",
+				"app/assets/javascripts/ajaxCalls.js"
+			],
+			[
+				"matches.html.erb",
+				"app/views/student_profile/matches.html.erb"
+			],
+			[
+				"compl",
+				"app/controllers/complains_controller.rb"
+			],
+			[
+				"complain",
+				"app/admin/complain.rb"
+			],
+			[
+				"contra",
+				"app/admin/contract.rb"
+			],
+			[
+				"user_con",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"rout",
+				"config/routes.rb"
+			],
+			[
+				"simple",
+				"app/assets/stylesheets/simple.css"
+			],
+			[
+				"application.css",
+				"app/assets/stylesheets/application.css"
+			],
+			[
+				"rou",
+				"config/routes.rb"
+			],
+			[
+				"student",
+				"app/admin/student.rb"
+			],
+			[
+				"stud",
+				"app/models/student.rb"
+			],
+			[
+				"tea",
+				"app/admin/team.rb"
+			],
+			[
+				"activit",
+				"app/admin/activity.rb"
+			],
+			[
+				"lending",
+				"app/admin/lending.rb"
+			],
+			[
+				"admin",
+				"app/models/admin_user.rb"
+			],
+			[
+				"gemf",
+				"Gemfile"
+			],
+			[
+				"cont",
+				"app/models/contract.rb"
+			],
+			[
+				"create_u",
+				"db/migrate/20141226131717_create_users.rb"
+			],
+			[
+				"user.",
+				"app/models/user.rb"
+			],
+			[
+				"contrac",
+				"app/models/contract.rb"
+			],
+			[
+				"crea",
+				"db/migrate/20141226131717_create_users.rb"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"company",
+				"app/models/company.rb"
+			],
+			[
+				"con",
+				"app/models/contract.rb"
+			],
+			[
+				"compa",
+				"app/models/company.rb"
+			],
+			[
+				".yml",
+				"config/locales/en.yml"
+			],
+			[
+				"create_con",
+				"db/migrate/20141226121347_create_contracts.rb"
+			],
+			[
+				"create",
+				"db/migrate/20141226121347_create_contracts.rb"
+			],
+			[
+				"company.rb",
+				"app/models/company.rb"
+			],
+			[
+				"contr",
+				"app/models/contract.rb"
+			],
+			[
+				"comp",
+				"test/fixtures/companies.yml"
+			],
+			[
+				"data",
+				"config/database.yml"
+			],
+			[
+				"act",
+				"InterestSniper/config/initializers/active_admin.rb"
+			],
+			[
+				"active",
+				"interest_sniper/config/initializers/active_admin.rb"
+			],
+			[
+				"tri",
+				"js/trial.js"
+			],
+			[
+				"g",
+				"Gemfile"
+			],
+			[
+				"active_admin",
+				"config/initializers/active_admin.rb"
+			],
+			[
+				"main.",
+				"js/main.js"
+			],
+			[
+				"trial",
+				"js/trial.js"
+			],
+			[
+				"keybo",
+				"keyboard.js"
+			],
+			[
+				"sn",
+				"css/sniper.css"
+			],
+			[
+				"sniper",
+				"css/sniper.css"
+			],
+			[
+				"snip",
+				"css/sniper.css"
+			],
+			[
+				"keyb",
+				"keyboard.js"
+			],
+			[
+				"main.js",
+				"js/main.js"
+			],
+			[
+				"popj",
+				"js/popup.js"
+			],
+			[
+				"popu",
+				"popup.html"
+			],
+			[
+				"sniper.css",
+				"css/sniper.css"
+			],
+			[
+				"pop.js",
+				"js/popup.js"
+			],
+			[
+				"sniper.",
+				"css/sniper.css"
+			],
+			[
+				"student_",
+				"app/models/student_activity.rb"
+			],
+			[
+				"ar",
+				"config/locales/ar.active_record.yml"
+			],
+			[
+				"matc",
+				"app/admin/match.rb"
+			],
+			[
+				"math",
+				"app/models/match.rb"
+			],
+			[
+				"mat",
+				"app/admin/match.rb"
+			],
+			[
+				"activi",
+				"app/controllers/activities_controller.rb"
+			],
+			[
+				"studenta",
+				"app/models/student_activity.rb"
+			],
+			[
+				"studentac",
+				"app/admin/student_activity.rb"
+			],
+			[
+				"m",
+				"app/models/match.rb"
+			],
+			[
+				"team.js",
+				"app/views/activities/teams.js.erb"
+			],
+			[
+				"train",
+				"app/models/training.rb"
+			],
+			[
+				"trans",
+				"app/models/transaction.rb"
+			],
+			[
+				"lendi",
+				"app/admin/lending.rb"
+			],
+			[
+				"student_ac",
+				"app/admin/student_activity.rb"
+			],
+			[
+				"active_admin.css.scss",
+				"app/assets/stylesheets/active_admin.css.scss"
+			],
+			[
+				"stude",
+				"app/admin/student.rb"
+			],
+			[
+				"student_a",
+				"app/admin/student_activity.rb"
+			],
+			[
+				"da",
+				"config/database.yml"
+			],
+			[
+				"application_h",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"stu",
+				"app/admin/student.rb"
+			],
+			[
+				"activity",
+				"app/admin/activity.rb"
+			],
+			[
+				"conte",
+				"pictionaryContent.js"
+			],
+			[
+				"pro",
+				"config/environments/production.rb"
+			],
+			[
+				"applic",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"studen",
+				"app/models/student.rb"
+			],
+			[
+				"admin_",
+				"app/admin/admin_user.rb"
+			],
+			[
+				"prod",
+				"config/environments/production.rb"
+			],
+			[
+				"sch",
+				"db/schema.rb"
+			],
+			[
+				"application",
+				"app/assets/javascripts/application.js"
+			],
+			[
+				"product",
+				"config/environments/production.rb"
+			],
+			[
+				"javascript",
+				"app/assets/javascripts/active_admin.js.coffee"
+			],
+			[
+				"devi",
+				"config/initializers/devise.rb"
+			],
+			[
+				"dat",
+				"config/database.yml"
+			],
+			[
+				"appli",
+				"config/application.rb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"appl",
+				"config/application.rb"
+			],
+			[
+				"app",
+				"config/application.rb"
+			],
+			[
+				"datab",
+				"config/database.yml"
+			],
+			[
+				"mysql2psql.yml",
+				"mysql2psql.yml"
+			],
+			[
+				"student.rb",
+				"app/models/student.rb"
+			],
+			[
+				"traing",
+				"app/admin/training.rb"
+			],
+			[
+				"abili",
+				"app/models/ability.rb"
+			],
+			[
+				"router",
+				"config/routes.rb"
+			],
+			[
+				"student_activity",
+				"app/models/student_activity.rb"
+			],
+			[
+				"student.",
+				"app/admin/student.rb"
+			],
+			[
+				"activ",
+				"app/admin/activity.rb"
+			],
+			[
+				"migrate",
+				"db/migrate/20141108101729_add_column_to_table_students.rb"
+			],
+			[
+				"admin_user",
+				"db/migrate/20151128112961_add_student_activity_to_admin_user.rb"
+			],
+			[
+				"tool",
+				"app/models/tool.rb"
+			],
+			[
+				"store",
+				"app/admin/store.rb"
+			],
+			[
+				"champ",
+				"app/admin/champion.rb"
+			],
+			[
+				"team.",
+				"app/admin/team.rb"
+			],
+			[
+				"ar.",
+				"config/locales/ar.yml"
+			],
+			[
+				"database",
+				"config/database.yml"
+			],
+			[
+				"gbe.ke",
+				"osx/layouts/gbe.keylayout"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 75.0,
+		"selected_items":
+		[
+			[
+				"getLan",
+				"getLanguage"
+			]
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 257.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
