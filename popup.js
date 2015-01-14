@@ -21,7 +21,7 @@ window.addEventListener('load', function() {
 
 $('#btn').click(function(event) {
   //action on clicking on showing notification button .
-  getNotification();
+ // getNotification();
   show();
 });
 
