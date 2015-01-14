@@ -1,5 +1,5 @@
 body{
-	width: 185px;
+	width: 300px;
 	margin: 0px;
 }
 
@@ -8,7 +8,7 @@ body{
 }
 
 #logo{
-	width:160px;
+	width:260px;
 	padding: 10px;
     padding-bottom: 30px;
 }
@@ -17,7 +17,7 @@ body{
 #inputText{
 	height: 100px;
 	 margin-bottom: 15px;
-	  width:180px;"
+	  width:250px;"
 }
 
 #footer{
@@ -31,8 +31,8 @@ body{
 		border: 0 !important;  /*Removes border*/
 		-webkit-appearance: none;  /*Removes default chrome and safari style*/
 		-moz-appearance: none; /* Removes Default Firefox style*/
-		background: #5E6C73 url(http://www.clker.com/cliparts/y/m/X/o/s/R/down-arrow-circle-hi.png) no-repeat 90% center;
-		width: 100px; /*Width of select dropdown to give space for arrow image*/
+		background: #DB8716 url(http://www.clker.com/cliparts/y/m/X/o/s/R/down-arrow-circle-hi.png) no-repeat 90% center;
+		width: 200px; /*Width of select dropdown to give space for arrow image*/
 		text-indent: 0.01px; /* Removes default arrow from firefox*/
 		text-overflow: "";  /*Removes default arrow from firefox*/ /*My custom style for fonts*/
 		color: #FFF;
@@ -52,15 +52,63 @@ hr{
     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
 
 
 
 .container
-{	padding-top: 5px;
+{	
+	padding-left: 20px;
+	padding-top: 5px;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0)));
 	background-color: gainsboro;
 
 
+}
+
+#options{
+		padding-left: 20px
+
+}
+
+#options #lang{
+	width:250px;
+}
+
+#btn{
+	width: 250px
+}
+#notification{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	width: 150px;
+	padding: 50px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+#inspiration{
+	font-family : Helvetica;
+    font-size : 19px;
+    letter-spacing : 0.3px;
+    color : black;
+    padding: 5%;
+    font-weight : bold;
+}
+
+
+#by{
+	font-style: italic;
+ 	padding:10%;
+}
+
+#day{
+ 	font-size : 10px;
+  	font-style: italic;
+	color:grey;
+	padding-left:1%;
 }

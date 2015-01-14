@@ -4,6 +4,7 @@ window.addEventListener('load', function() {
   if(options) {
   // Initialize the option controls.
   options.lang.value = localStorage.lang;
+  getNotification();
 
   // Save the display language.
   options.lang.onchange = function() {
@@ -43,16 +44,16 @@ function getNotification(){
               success:function(r){ 
           
 
-          $('#by').text("by: " + r["by"]);
-          $('#inspiration').text("inspiration: " + r["inspiration"]);
-          $('#day').text("day: "+ r["day"]);
+          $('#by').text( r["by"]);
+          $('#inspiration').text(r["inspiration"]);
+          $('#day').text( r["day"]);
 
-            
 
               }
 
 
           });
-$('#notification').show().fadeIn(500);
+
+$('#notification').show().fadeIn(1000);
           //return r;
  }
