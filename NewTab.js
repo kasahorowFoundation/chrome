@@ -15,7 +15,6 @@ function checkTime(i) {
 }
 
 
-window.addEventListener('load', startTime);
 
 
 
@@ -43,6 +42,8 @@ $('#notification').show().fadeIn(1000);
  }
 
 
- window.addEventListener('load', getNotification);
+//calls on page load
+window.addEventListener('load', startTime);
+window.addEventListener('load', getNotification);
 
 

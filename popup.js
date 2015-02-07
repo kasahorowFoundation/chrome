@@ -29,6 +29,7 @@ $('.share').click(function(event) {
 
 
 function getNotification(){
+  /* gets new notification of the chosen language */
   url_link = 'http://' + localStorage.lang + '.kasahorow.org/app/m?format=json&source=chrome';
 
           $.ajax({
@@ -36,11 +37,10 @@ function getNotification(){
               dataType:"JSON",
               async:false,
               success:function(r){ 
-          
-
-          $('#by').text( r["by"]);
-          $('#inspiration').text(r["inspiration"]);
-          $('#day').text( r["day"]);
+        
+                $('#by').text( r["by"]);
+                $('#inspiration').text(r["inspiration"]);
+                $('#day').text( r["day"]);
 
 
               }
