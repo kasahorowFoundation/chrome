@@ -14,10 +14,6 @@ function checkTime(i) {
     return i;
 }
 
-
-
-
-
 function getNotification(){
   url_link = 'http://' + localStorage.lang + '.kasahorow.org/app/m?format=json&source=chrome';
 
@@ -42,8 +38,6 @@ $('#notification').show().fadeIn(1000);
  }
 
 
-//calls on page load
+//called on page load
 window.addEventListener('load', startTime);
 window.addEventListener('load', getNotification);
-
-
