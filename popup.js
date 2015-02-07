@@ -19,12 +19,6 @@ window.addEventListener('load', function() {
 });
 
 
-$('#btn').click(function(event) {
-  //action on clicking on showing notification button .
- // getNotification();
-  show();
-});
-
 $('.share').click(function(event) {
   var txt = $('#inputText').val();
   var url = $(this).attr('service');

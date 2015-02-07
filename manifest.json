@@ -36,6 +36,11 @@
     "128": "icon128.png"
   },
 
+  "chrome_url_overrides" : {
+    "newtab": "NewTab.html"
+  },
+
+
   "web_accessible_resources": [
     "icon48.png"
   ]
