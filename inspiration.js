@@ -78,7 +78,7 @@ else
 
 
 
-
+//to update inspiration locally instead of multiple json calls.
 function updateInspiration() {
   var by ;
   var day ;
@@ -116,7 +116,7 @@ if (!localStorage.updateDate){
   updateInspiration();
 }
 
-function NewInspirationCheck(){
+function getInspiration(){
   var today = (new Date()).toDateString();
   if (!localStorage.updateDate){
     updateInspiration();
@@ -126,3 +126,11 @@ function NewInspirationCheck(){
   }
   return [localStorage.inspiration, localStorage.by,localStorage.day];
 }
+
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    if (request.method == "getInspiration")
+      sendResponse({inspiration: getInspiration()});
+    else
+      sendResponse({}); // snub them.
+});
+

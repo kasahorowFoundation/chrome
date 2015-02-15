@@ -23,28 +23,17 @@ function checkTime(i)
 
 
 function getNotification(){
-  language = getLanguage();
-  url_link = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome';
+  chrome.runtime.sendMessage({method: "getInspiration"}, function(response) {
+    language = getLanguage();
+    inspiration = response.inspiration;
+    $('#inspiration').text(inspiration[0]);
+    $('#day').text(inspiration[2]);
 
-          $.ajax({
-              url:url_link, 
-              dataType:"JSON",
-              async:false,
-              success:function(r){ 
-          
-          $('#inspiration').text(r["inspiration"]);
-          $('#day').text( r["day"]);
-
-
-              }
-
-
-          });
-          $('#by').html("<a style=' color: #fff; font-weight: lighter; text-decoration:none; ' href='http://" + language + ".kasahorow.org'>kasahorow</a>");
+    $('#by').html("<a style=' color: #fff; font-weight: lighter; text-decoration:none; ' href='http://" + language + ".kasahorow.org'>kasahorow</a>");
 
     $('#notification').show().fadeIn(1000);
+  });
 }
-
 /*
 function backgroundRandom(){
     var bgArray = ['http://goo.gl/Ir6y9D','http://goo.gl/jZsq5N','http://goo.gl/ZtTu3k','http://goo.gl/UEZF6m','http://goo.gl/Id0ak9','http://goo.gl/PaFNLs','http://goo.gl/hTvKpR','http://goo.gl/53bnNL','http://goo.gl/GkMbgt','http://goo.gl/U0OCiy','http://goo.gl/8XLCoq'];

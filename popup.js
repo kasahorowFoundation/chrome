@@ -11,6 +11,7 @@ window.addEventListener('load', function() {
     localStorage.lang = options.lang.value;
     createTranslationMenu(localStorage.lang);
     updateUI(localStorage.lang);
+    
   };
 
   }
@@ -29,24 +30,17 @@ $('.share').click(function(event) {
 
 
 function getNotification(){
-  /* gets new notification of the chosen language */
-  url_link = 'http://' + localStorage.lang + '.kasahorow.org/app/m?format=json&source=chrome';
 
-          $.ajax({
-              url:url_link, 
-              dataType:"JSON",
-              async:false,
-              success:function(r){ 
+  chrome.runtime.sendMessage({method: "getInspiration"}, function(response) {
+      inspiration = response.inspiration;
+                $('#by').text(inspiration[1]);
+                $('#inspiration').text(inspiration[0]);
+                $('#day').text(inspiration[2]);
+
+  });
+
         
-                $('#by').text( r["by"]);
-                $('#inspiration').text(r["inspiration"]);
-                $('#day').text( r["day"]);
 
-
-              }
-
-
-          });
 
 $('#notification').show().fadeIn(1000);
           //return r;

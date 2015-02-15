@@ -102,6 +102,7 @@ function translationHandler(info, tab) {
 
 
 function createTranslationMenu(lang) {
+
     chrome.contextMenus.removeAll();
     var context = "selection";
     var title = "Learn \"%s\" in " + getData(lang).language;
@@ -113,11 +114,14 @@ function updateUI(lang) {
   //chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
   chrome.browserAction.setBadgeText({text: lang.toUpperCase()});   
   chrome.tabs.create({url: data['url']+'/app/b?utm_campaign=read&utm_medium='+ lang + '&utm_source=chrome'});
+  getInspiration();
+
 }
 
 function updateUIonly(lang) {
 
   data = getData(lang);
+  getInspiration();
 
   //chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
   //chrome.browserAction.setBadgeText({text: lang.toUpperCase()});
@@ -135,6 +139,8 @@ chrome.contextMenus.onClicked.addListener(translationHandler);
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.method == "getLang")
       sendResponse({lang: getLanguage()});
+    else  if (request.method == "getInspiration")
+      sendResponse({inspiration: getInspiration()});
     else
       sendResponse({}); // snub them.
 });
@@ -165,4 +171,61 @@ if (millisTill10 < 0) {
 //change UI
 setTimeout(function(){  if(localStorage.isActivated){ changeBadgeText() }  }, millisTill10);
 changeBadgeText();
+
+
+
+
+//inspiration
+
+
+
+//to update inspiration locally instead of multiple json calls.
+function updateInspiration() {
+  var by ;
+  var day ;
+  var inspiration ;
+  var language = getLanguage();
+
+  var xhr = new XMLHttpRequest();
+    //gets the JSON feed
+  url = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome';
+  notification_url = 'http://' + language + '.kasahorow.org/app/b' +'?utm_campaign=read&utm_medium='+ language + '&utm_source=chrome';
+
+  xhr.open("GET", url, true);
+  xhr.onreadystatechange=function() {
+          //Works after getting the feed
+            if (xhr.readyState == 4) {
+                var res = JSON.parse(xhr.response);
+                by = res["by"];
+                day = res["day"];
+                inspiration = res["inspiration"];
+                
+                localStorage.by = by;
+                localStorage.day = day;
+                localStorage.inspiration = inspiration;
+                localStorage.updateDate = (new Date()).toDateString();
+                
+
+            }
+    };
+    xhr.send();
+    
+  
+}
+
+if (!localStorage.updateDate){
+  updateInspiration();
+}
+
+function getInspiration(){
+  var today = (new Date()).toDateString();
+  if (!localStorage.updateDate){
+    updateInspiration();
+  }
+  else if (localStorage.updateDate == today){
+    updateInspiration();
+  }
+  return [localStorage.inspiration, localStorage.by,localStorage.day];
+}
+
 
