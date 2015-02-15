@@ -2,6 +2,11 @@ body
 {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
+    background-image: url("morning.jpg");
+}
+
+.afternoon {
+        background-image: url("afternoon.jpg");
 }
 
 #currentTime
@@ -25,5 +30,5 @@ body
 	margin: 0;
 	color: #fff;
 	font-size: 30px;
-	font-weight: lighter;
+	font-weight: light;
 }

@@ -4,6 +4,11 @@ function startTime()
     var h=today.getHours();
     var m=today.getMinutes();
     var s=today.getSeconds();
+    if(h > 12) {
+      $("body").addClass('afternoon');
+    }else {
+      $("body").removeClass('afternoon');
+    }
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('currentTime').innerHTML = h+":"+m+":"+s;
@@ -16,21 +21,26 @@ function checkTime(i)
     return i;
 }
 
-function getNotification()
-{
-    url_link = 'http://' + localStorage.lang + '.kasahorow.org/app/m?format=json&source=chrome';
 
-    $.ajax({
-            url:url_link, 
-            dataType:"JSON",
-            async:false,
-            success:function(r)
-            { 
-              $('#by').text(r["by"]);
-              $('#inspiration').text(r["inspiration"]);
-              $('#day').text( r["day"]);
-            }
+function getNotification(){
+  language = getLanguage();
+  url_link = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome';
+
+          $.ajax({
+              url:url_link, 
+              dataType:"JSON",
+              async:false,
+              success:function(r){ 
+          
+          $('#inspiration').text(r["inspiration"]);
+          $('#day').text( r["day"]);
+
+
+              }
+
+
           });
+          $('#by').html("<a style=' color: #fff; font-weight: lighter; text-decoration:none; ' href='http://" + language + ".kasahorow.org'>kasahorow</a>");
 
     $('#notification').show().fadeIn(1000);
 }
@@ -52,3 +62,4 @@ function backgroundRandom(){
 window.addEventListener('load', startTime);
 window.addEventListener('load', getNotification);
 //window.addEventListener('load', backgroundRandom);
+

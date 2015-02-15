@@ -40,13 +40,11 @@ function Replacer(x, language){
       }
   }
    
-
+/*
 var language = "";
 chrome.runtime.sendMessage({method: "getLang"}, function(response) {
 	language= response.lang;
   Replacer(document.body, language);
 
 });
-
-
-
+*/
