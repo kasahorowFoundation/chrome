@@ -29,9 +29,9 @@ function getData(lang) {
       data = {'url': 'http://en.kasahorow.org', 'name':'FIENIPA',
               'language': 'African English'};
       break;
-    case 'ga':
-      data = {'url': 'http://ga.kasahorow.org', 'name':'Ayikaile',
-              'language': 'Ga-Dangbe'};
+    case 'ge':
+      data = {'url': 'http://ge.kasahorow.org', 'name':'Ayikaile',
+              'language': 'GaDangme'};
       break;
     case 'ha':
       data = {'url': 'http://ha.kasahorow.org', 'name':'Barkadar',
