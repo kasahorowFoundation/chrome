@@ -73,4 +73,4 @@ else
 */
 
 
-
+//Inspiration notification is not used at all now.

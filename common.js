@@ -141,7 +141,12 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 
 
-
+function changeBadgeText()
+{
+  var now = new Date();
+  var today= now.getDate()+"";
+  chrome.browserAction.setBadgeText({text: today});
+}
   
 
 
@@ -159,14 +164,5 @@ if (millisTill10 < 0) {
   
 //change UI
 setTimeout(function(){  if(localStorage.isActivated){ changeBadgeText() }  }, millisTill10);
-
-
-
 changeBadgeText();
-function changeBadgeText()
-{
-  var now = new Date();
-  var today= now.getDate()+"";
-  chrome.browserAction.setBadgeText({text: today});
-  console.log("print");
-}
+
