@@ -74,3 +74,55 @@ else
 
 
 //Inspiration notification is not used at all now.
+
+
+
+
+
+function updateInspiration() {
+  var by ;
+  var day ;
+  var inspiration ;
+  var language = getLanguage();
+
+  var xhr = new XMLHttpRequest();
+    //gets the JSON feed
+  url = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome';
+  notification_url = 'http://' + language + '.kasahorow.org/app/b' +'?utm_campaign=read&utm_medium='+ language + '&utm_source=chrome';
+
+  xhr.open("GET", url, true);
+  xhr.onreadystatechange=function() {
+          //Works after getting the feed
+            if (xhr.readyState == 4) {
+                var res = JSON.parse(xhr.response);
+                by = res["by"];
+                day = res["day"];
+                inspiration = res["inspiration"];
+                
+                localStorage.by = by;
+                localStorage.day = day;
+                localStorage.inspiration = inspiration;
+                localStorage.updateDate = (new Date()).toDateString();
+                
+
+            }
+    };
+    xhr.send();
+    
+  
+}
+
+if (!localStorage.updateDate){
+  updateInspiration();
+}
+
+function NewInspirationCheck(){
+  var today = (new Date()).toDateString();
+  if (!localStorage.updateDate){
+    updateInspiration();
+  }
+  else if (localStorage.updateDate == today){
+    updateInspiration();
+  }
+  return [localStorage.inspiration, localStorage.by,localStorage.day];
+}
