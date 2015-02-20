@@ -28,6 +28,15 @@ $('.share').click(function(event) {
 });
 
 
+$('.translate').click(function(event) {
+  var txt = $('#inputText').val();
+  var url = $(this).attr('service');
+  var languageSymbol = localStorage.lang;
+  window.open(url+encodeURIComponent(txt)+ "&fl=en&tl="+languageSymbol);
+});
+
+
+
 
 function getNotification(){
 
