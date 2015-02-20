@@ -4,11 +4,11 @@ function startTime()
     var h=today.getHours();
     var m=today.getMinutes();
     var s=today.getSeconds();
-    if(h > 12) {
+    /*if(h > 12) {
       $("body").addClass('afternoon');
     }else {
       $("body").removeClass('afternoon');
-    }
+    } */
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('currentTime').innerHTML = h+":"+m+":"+s;
@@ -34,21 +34,23 @@ function getNotification(){
     $('#notification').show().fadeIn(1000);
   });
 }
-/*
+
 function backgroundRandom(){
-    var bgArray = ['http://goo.gl/Ir6y9D','http://goo.gl/jZsq5N','http://goo.gl/ZtTu3k','http://goo.gl/UEZF6m','http://goo.gl/Id0ak9','http://goo.gl/PaFNLs','http://goo.gl/hTvKpR','http://goo.gl/53bnNL','http://goo.gl/GkMbgt','http://goo.gl/U0OCiy','http://goo.gl/8XLCoq'];
-    var bg = "url('"+bgArray[Math.floor(Math.random() * bgArray.length)]+"')";
+    console.log('setting background');
+    var bgArray = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'];
     // If you have defined a path for the images
-                var path = 'images/bg/';
+    var path = 'images/';
+    var bg = "url('"+path+bgArray[Math.floor(Math.random() * bgArray.length)]+"')";
 
-                // then you can put it right before the variable 'bg'
-                $('body').css('background', path+bg);
+    // then you can put it right before the variable 'bg'
+    $('body').css('background-image', bg);
+    console.log(path+bg);
 
-                $('body').css('background-image', bg);
+    //$('body').css('background-image', bg);
 }
-*/
+
 //called on page load
 window.addEventListener('load', startTime);
 window.addEventListener('load', getNotification);
-//window.addEventListener('load', backgroundRandom);
+window.addEventListener('load', backgroundRandom);
 

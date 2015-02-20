@@ -2,12 +2,9 @@ body
 {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-    background-image: url("morning.jpg");
+    background-image: "img/morning.jpg";
 }
 
-.afternoon {
-        background-image: url("afternoon.jpg");
-}
 
 #currentTime
 {
