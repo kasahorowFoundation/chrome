@@ -4,11 +4,6 @@ function startTime()
     var h=today.getHours();
     var m=today.getMinutes();
     var s=today.getSeconds();
-    /*if(h > 12) {
-      $("body").addClass('afternoon');
-    }else {
-      $("body").removeClass('afternoon');
-    } */
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('currentTime').innerHTML = h+":"+m+":"+s;
