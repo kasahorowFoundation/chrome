@@ -114,14 +114,14 @@ function updateUI(lang) {
   //chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
   chrome.browserAction.setBadgeText({text: lang.toUpperCase()});   
   chrome.tabs.create({url: data['url']+'/app/b?utm_campaign=read&utm_medium='+ lang + '&utm_source=chrome'});
-  getInspiration();
+  updateInspiration();
 
 }
 
 function updateUIonly(lang) {
 
   data = getData(lang);
-  getInspiration();
+  updateInspiration();
 
   //chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
   //chrome.browserAction.setBadgeText({text: lang.toUpperCase()});
