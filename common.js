@@ -191,6 +191,7 @@ function updateInspiration() {
   url = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome';
   notification_url = 'http://' + language + '.kasahorow.org/app/b' +'?utm_campaign=read&utm_medium='+ language + '&utm_source=chrome';
 
+  //synchronization false, as not to show tab or pop up before changing the notification.
   xhr.open("GET", url, false);
   xhr.onreadystatechange=function() {
           //Works after getting the feed
