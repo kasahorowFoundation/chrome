@@ -24,7 +24,7 @@ function getNotification(){
     $('#inspiration').text(inspiration[0]);
     $('#day').text(inspiration[2]);
 
-    $('#by').html("<a style=' color: #fff; font-weight: lighter; text-decoration:none; ' href='http://" + language + ".kasahorow.org'>kasahorow</a>");
+    $('#by').html("<a style=' color: #fff; font-weight: lighter; text-decoration:none; ' href='http://" + language + ".kasahorow.org?utm_campaign=newtab&utm_source=chrome&utm_medium=" + language + "'>kasahorow</a>");
 
     $('#notification').show().fadeIn(1000);
   });
