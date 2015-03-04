@@ -191,7 +191,7 @@ function updateInspiration() {
   url = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome';
   notification_url = 'http://' + language + '.kasahorow.org/app/b' +'?utm_campaign=read&utm_medium='+ language + '&utm_source=chrome';
 
-  xhr.open("GET", url, true);
+  xhr.open("GET", url, false);
   xhr.onreadystatechange=function() {
           //Works after getting the feed
             if (xhr.readyState == 4) {
@@ -210,7 +210,7 @@ function updateInspiration() {
     };
     xhr.send();
     
-  
+  return 0;
 }
 
 if (!localStorage.updateDate){
@@ -224,6 +224,7 @@ function getInspiration(){
   }
   else if (localStorage.updateDate == today){
     updateInspiration();
+
   }
   return [localStorage.inspiration, localStorage.by,localStorage.day];
 }
