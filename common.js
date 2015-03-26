@@ -220,13 +220,14 @@ if (!localStorage.updateDate){
 
 function getInspiration(){
   var today = (new Date()).toDateString();
+
   if (!localStorage.updateDate){
     updateInspiration();
   }
-  else if (localStorage.updateDate != today){
+  else if (localStorage.updateDate !== today){
     updateInspiration();
-
   }
+
   return [localStorage.inspiration, localStorage.by,localStorage.day];
 }
 
