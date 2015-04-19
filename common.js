@@ -223,12 +223,15 @@ function getInspiration(){
 
   if (!localStorage.updateDate){
     updateInspiration();
+    return [localStorage.inspiration, localStorage.by,localStorage.day];
+
   }
   else if (localStorage.updateDate !== today){
     updateInspiration();
+    return [localStorage.inspiration, localStorage.by,localStorage.day];
+
   }
 
-  return [localStorage.inspiration, localStorage.by,localStorage.day];
 }
 
 
