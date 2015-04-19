@@ -44,8 +44,33 @@ function backgroundRandom(){
     //$('body').css('background-image', bg);
 }
 
+
+
+$('.share').click(function(event) {
+    alert("hena ahw");
+  var txt = $('#inputText').val();
+  var url = $(this).attr('service');
+  var data = getData(localStorage.lang);
+  window.open(url+encodeURIComponent(txt)+ " %23"+data["language"]+" %23kasahorow @kasahorow");
+});
+
+
+$('.translate').click(function(event) {
+        alert("hena ahw 2");
+
+  var txt = $('#inputText').val();
+  var url = $(this).attr('service');
+  var languageSymbol = localStorage.lang;
+  window.open(url+encodeURIComponent(txt)+ "&fl=en&tl="+languageSymbol);
+});
+
+
+
+
 //called on page load
 window.addEventListener('load', startTime);
 window.addEventListener('load', getNotification);
 window.addEventListener('load', backgroundRandom);
+
+
 
