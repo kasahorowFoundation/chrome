@@ -31,7 +31,6 @@ function getNotification(){
 }
 
 function backgroundRandom(){
-    console.log('setting background');
     var bgArray = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'];
     // If you have defined a path for the images
     var path = 'images/';
@@ -39,9 +38,6 @@ function backgroundRandom(){
 
     // then you can put it right before the variable 'bg'
     $('body').css('background-image', bg);
-    console.log(path+bg);
-
-    //$('body').css('background-image', bg);
 }
 
 
@@ -50,7 +46,7 @@ $('.share').click(function(event) {
   var txt = $('#inputText').val();
   var url = $(this).attr('service');
   var data = getData(localStorage.lang);
-  window.open(url+encodeURIComponent(txt)+ " %23"+data["language"]+" %23kasahorow @kasahorow");
+  window.open(url+encodeURIComponent(txt)+ " %23"+(data["language"]).replace(" ","_") +" %23kasahorow @kasahorow");
 });
 
 

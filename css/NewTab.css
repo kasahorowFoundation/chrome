@@ -12,13 +12,24 @@ hr
 }
 
 
-textarea{
-	background: transparent;
+#inputText{
+	margin-top:10px;
+    background: rgba(0, 0, 0, 0.37);
 	color: white;
-	width: 80%;
-	margin-left: 10%;
-	height:20%;
+	margin-left: 23%;
+
+
+
+	display: block;
+    box-sizing: border-box;
+    padding: 6px;
+    width: 626px;
+    height: 65px;
+    resize: vertical;
+
 }
+
+
 
 
 .translate{
