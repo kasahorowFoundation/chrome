@@ -13,19 +13,18 @@ hr
 
 
 #inputText{
-	margin-top:10px;
+	font-size:16px;
     background: rgba(0, 0, 0, 0.37);
 	color: white;
-	margin-left: 23%;
-
-
-
+	margin: 0 auto;
 	display: block;
     box-sizing: border-box;
     padding: 6px;
-    width: 626px;
+    width: 580px;
     height: 65px;
-    resize: vertical;
+	resize: none;
+    margin-top:10px;
+
 
 }
 
@@ -54,9 +53,10 @@ hr
 
 #footer{
 	height: 35px;
-    text-align:center;
-    padding-left:45%;  
-    padding-top: 10px;
+	text-align: center;
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 110px;
 }
 
 #footer img{
