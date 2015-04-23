@@ -93,7 +93,9 @@ function getData(lang) {
 
 function languageTitle(lang) {
   data = getData(lang);
+
   return data.name;
+
 }
 
 function translationHandler(info, tab) {
@@ -111,20 +113,18 @@ function createTranslationMenu(lang) {
 
 function updateUI(lang) {
   data = getData(lang);
+
   //chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
   chrome.browserAction.setBadgeText({text: lang.toUpperCase()});   
   chrome.tabs.create({url: data['url']+'/app/b?utm_campaign=read&utm_medium='+ lang + '&utm_source=chrome'});
-  updateInspiration();
-    console.log("mn updateUI");
 
 
 }
 
 function updateUIonly(lang) {
-
+  
   data = getData(lang);
-  console.log("mn updateUIonly");
-  updateInspiration();
+
 
   //chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
   //chrome.browserAction.setBadgeText({text: lang.toUpperCase()});
@@ -140,10 +140,15 @@ chrome.contextMenus.onClicked.addListener(translationHandler);
 
 //TO Covert words to links, sends language to hrefAdding: 
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if (request.method == "getLang")
+    if(request.method == "updateInspiration"){
+      updateInspiration();
+    }
+    else if (request.method == "getLang")
       sendResponse({lang: getLanguage()});
-    else  if (request.method == "getInspiration")
-      sendResponse({inspiration: getInspiration()});
+    else if (request.method == "getData"){
+      sendResponse({data_info: getData()});
+
+    }
     else
       sendResponse({}); // snub them.
 });
@@ -178,8 +183,6 @@ changeBadgeText();
 
 
 
-//inspiration
-
 
 
 //to update inspiration locally instead of multiple json calls.
@@ -208,6 +211,7 @@ function updateInspiration() {
                 localStorage.day = day;
                 localStorage.inspiration = inspiration;
                 localStorage.updateDate = (new Date()).toDateString();
+                localStorage.inspiration_language = language;
                 
 
             }
@@ -218,29 +222,7 @@ function updateInspiration() {
 }
 
 if (!localStorage.updateDate){
-  console.log("auto update");
   updateInspiration();
 }
 
-function getInspiration(){
-  console.log("you just asked for inspiration wohooo");
-  var today = (new Date()).toDateString();
-
-  if (!localStorage.updateDate){
-        console.log("first time today");
-
-    updateInspiration();
-    return [localStorage.inspiration, localStorage.by,localStorage.day];
-
-  }
-  else if (localStorage.updateDate !== today){
-    console.log("not today");
-    updateInspiration();
-    return [localStorage.inspiration, localStorage.by,localStorage.day];
-
-  }else{
-    return [localStorage.inspiration, localStorage.by,localStorage.day];
-  }
-
-}
 
