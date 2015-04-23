@@ -115,12 +115,15 @@ function updateUI(lang) {
   chrome.browserAction.setBadgeText({text: lang.toUpperCase()});   
   chrome.tabs.create({url: data['url']+'/app/b?utm_campaign=read&utm_medium='+ lang + '&utm_source=chrome'});
   updateInspiration();
+    console.log("mn updateUI");
+
 
 }
 
 function updateUIonly(lang) {
 
   data = getData(lang);
+  console.log("mn updateUIonly");
   updateInspiration();
 
   //chrome.browserAction.setTitle({title: data['language'] + ' kasahorow'});
@@ -191,11 +194,11 @@ function updateInspiration() {
   url = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome';
   //notification_url = 'http://' + language + '.kasahorow.org/app/b' +'?utm_campaign=read&utm_medium='+ language + '&utm_source=chrome';
 
-  //synchronization false, as not to show tab or pop up before changing the notification.
-  xhr.open("GET", url, false);
+  //synchronization true, as not to show tab or pop up before changing the notification.
+  xhr.open("GET", url, true);
   xhr.onreadystatechange=function() {
           //Works after getting the feed
-            if (xhr.readyState == 4) {
+            if (xhr.readyState == 4 && this.status == 200) {
                 var res = JSON.parse(xhr.response);
                 by = res["by"];
                 day = res["day"];
@@ -210,28 +213,34 @@ function updateInspiration() {
             }
     };
     xhr.send();
-    
+
   return 0;
 }
 
 if (!localStorage.updateDate){
+  console.log("auto update");
   updateInspiration();
 }
 
 function getInspiration(){
+  console.log("you just asked for inspiration wohooo");
   var today = (new Date()).toDateString();
 
   if (!localStorage.updateDate){
+        console.log("first time today");
+
     updateInspiration();
     return [localStorage.inspiration, localStorage.by,localStorage.day];
 
   }
   else if (localStorage.updateDate !== today){
+    console.log("not today");
     updateInspiration();
     return [localStorage.inspiration, localStorage.by,localStorage.day];
 
+  }else{
+    return [localStorage.inspiration, localStorage.by,localStorage.day];
   }
 
 }
-
 
