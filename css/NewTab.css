@@ -22,12 +22,27 @@ textarea{
 
 
 .translate{
-  border-radius: 10px;
+  border-radius: 30px;
   background: #BADA55;
+  width: 40px;
+  height: 40px;
+  	padding: 5px;
+	border-color: transparent;
+
+  }
+
+
+.share{
+  	width: 50px;
+	height: 50px;
+	border-top-width: 0px;
+		padding: 5px;
+
+	padding-top: 0px;
   }
 
 #footer{
-	 height: 35px;
+	height: 35px;
     text-align:center;
     padding-left:45%;  
     padding-top: 10px;
@@ -35,10 +50,8 @@ textarea{
 
 #footer img{
 	float: left;
-	padding: 5px;
 	cursor: pointer;
-	border-width: 10px;
-	border-color: transparent;
+
 }
 
 

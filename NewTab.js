@@ -47,7 +47,6 @@ function backgroundRandom(){
 
 
 $('.share').click(function(event) {
-    alert("hena ahw");
   var txt = $('#inputText').val();
   var url = $(this).attr('service');
   var data = getData(localStorage.lang);
@@ -56,7 +55,6 @@ $('.share').click(function(event) {
 
 
 $('.translate').click(function(event) {
-        alert("hena ahw 2");
 
   var txt = $('#inputText').val();
   var url = $(this).attr('service');
