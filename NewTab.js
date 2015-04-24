@@ -72,7 +72,7 @@ $('.translate').click(function(event) {
 
   var txt = $('#inputText').val();
   var url = $(this).attr('service');
-  var languageSymbol = localStorage.lang;
+  var languageSymbol = getLanguage();
   window.open(url+encodeURIComponent(txt)+ "&fl=en&tl="+languageSymbol);
 });
 
