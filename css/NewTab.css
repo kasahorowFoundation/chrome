@@ -13,7 +13,7 @@ hr
 
 
 #inputText{
-	font-size:16px;
+	font-size:27px;
     background: rgba(0, 0, 0, 0.37);
 	color: white;
 	margin: 0 auto;
@@ -21,9 +21,10 @@ hr
     box-sizing: border-box;
     padding: 6px;
     width: 580px;
-    height: 65px;
+    height: 72px;
 	resize: none;
     margin-top:10px;
+    text-align:center;
 
 
 }
