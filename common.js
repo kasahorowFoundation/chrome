@@ -146,7 +146,7 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     else if (request.method == "getLang")
       sendResponse({lang: getLanguage()});
     else if (request.method == "getData"){
-      sendResponse({data_info: getData()});
+      sendResponse({data_info: getData(getLanguage())});
 
     }
     else
