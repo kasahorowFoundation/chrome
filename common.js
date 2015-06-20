@@ -53,6 +53,22 @@ function getData(lang) {
       data = {'url': 'http://ln.kasahorow.org', 'name':'Lingala kasahorow',
               'language': 'Lingala'};
       break;
+    case 'lw':
+      data = {'url': 'http://lw.kasahorow.org', 'name':'Luwo kasahorow',
+              'language': 'Luwo'};
+      break;
+    case 'mg':
+      data = {'url': 'http://mg.kasahorow.org', 'name':'Malagasy kasahorow',
+              'language': 'Malagasy'};
+      break;
+    case 'ny':
+      data = {'url': 'http://ny.kasahorow.org', 'name':'Chewa kasahorow',
+              'language': 'Chewa'};
+      break;
+    case 'om':
+      data = {'url': 'http://om.kasahorow.org', 'name':'Oromo kasahorow',
+              'language': 'Oromo'};
+      break;
 
     case 'rw':
       data = {'url': 'http://rw.kasahorow.org', 'name':'Ururimi',
@@ -81,6 +97,10 @@ function getData(lang) {
     case 'yo':
       data = {'url': 'http://yo.kasahorow.org', 'name':'Monifere',
               'language': 'Yoruba'};
+      break;
+    case 'zu':
+      data = {'url': 'http://zu.kasahorow.org', 'name':'Zulu kasahorow',
+              'language': 'Zulu'};
       break;
 
     default:
