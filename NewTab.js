@@ -45,7 +45,7 @@ function getNotification(){
 }
 
 function backgroundRandom(){
-    var bgArray = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg'];
+    var bgArray = ['1.webp','2.webp','3.webp','4.webp','5.webp'];
     // If you have defined a path for the images
     var path = 'images/';
     var bg = "url('"+path+bgArray[Math.floor(Math.random() * bgArray.length)]+"')";
