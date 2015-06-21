@@ -25,6 +25,43 @@ function getMaps(lang){
   return maps;
 }
 
+
+//get selected text.
+function get_selection() {
+  var txt = '';
+  
+  if (window.getSelection) {
+      txt = window.getSelection();
+  } else if (document.getSelection) {
+      txt = document.getSelection();
+  } else if (document.selection) {
+      txt = document.selection.createRange().text;
+  }
+      return txt;
+}
+
+
+
+$(document).on("taphold",function(e){
+  
+  var select_text = get_selection(); 
+  var url = "http://ak.kasahorow.org/app/d?kw=";
+  var languageSymbol = getLanguage();
+  window.open(url+encodeURIComponent(select_text)+ "&fl=en&tl="+languageSymbol);
+
+});
+
+$(document).dblclick(function(e) {
+  var select_text = get_selection(); 
+  var url = "http://ak.kasahorow.org/app/d?kw=";
+  var languageSymbol = getLanguage();
+  window.open(url+encodeURIComponent(select_text)+ "&fl=en&tl="+languageSymbol);
+}); 
+
+
+
+
+
 //https://github.com/accursoft/caret
 (function($) {
   $.fn.caret = function(pos) {
@@ -124,7 +161,13 @@ try{
 var letterSubs = getMaps(pl);
 
 try{
+
   $(document).ready(function(event){
+
+
+
+
+
     $('textarea, input').each(function(){ $(this).attr("placeholder", $(this).attr("placeholder") + ': ' + showHints(letterSubs));});
     $(document).delegate("input, textarea", "keyup", function(event){
         $(this).attr("title", showHints(letterSubs));
