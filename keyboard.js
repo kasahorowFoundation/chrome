@@ -40,22 +40,20 @@ function get_selection() {
       return txt;
 }
 
+function search_dictionary(e) {
+  var select_text = get_selection(); 
+  var languageSymbol = getLanguage();
+  var url = "http://" + languageSymbol + ".kasahorow.org/app/d?kw=";
+  window.open(url+encodeURIComponent(select_text) + "&tl=en&fl="+languageSymbol+"&utm_source="+e.type+"&utm_campaign=k&utm_medium="+languageSymbol);
 
+}
 
 $(document).on("taphold",function(e){
-  
-  var select_text = get_selection(); 
-  var url = "http://ak.kasahorow.org/app/d?kw=";
-  var languageSymbol = getLanguage();
-  window.open(url+encodeURIComponent(select_text)+ "&fl=en&tl="+languageSymbol);
-
+  search_dictionary(e);
 });
 
 $(document).dblclick(function(e) {
-  var select_text = get_selection(); 
-  var url = "http://ak.kasahorow.org/app/d?kw=";
-  var languageSymbol = getLanguage();
-  window.open(url+encodeURIComponent(select_text)+ "&fl=en&tl="+languageSymbol);
+  search_dictionary(e);
 }); 
 
 
