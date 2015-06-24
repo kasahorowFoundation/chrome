@@ -153,19 +153,21 @@ function showHints(letterSubs) {
 try{
   var pl = getLanguage();
 }catch(e){
-  var pl = document.documentElement.lang;
   console.log('getLanguage() not defined so getting language from document');
+  function getLanguage() {
+    var pl = document.documentElement.lang;
+    if (pl) {
+      return pl;
+    }else {
+      console.log('No language detected in this page so set to default: ak');
+      return 'ak';
+    }
+  }
 }
-var letterSubs = getMaps(pl);
+var letterSubs = getMaps(getLanguage());
 
 try{
-
   $(document).ready(function(event){
-
-
-
-
-
     $('textarea, input').each(function(){ $(this).attr("placeholder", $(this).attr("placeholder") + ': ' + showHints(letterSubs));});
     $(document).delegate("input, textarea", "keyup", function(event){
         $(this).attr("title", showHints(letterSubs));
@@ -177,10 +179,7 @@ try{
         $(this).val(cleanedValue);
         $(this).caret(caretPos);
     });
-
-
-});
-
+  });
 } catch(e){
   console.log('Make sure JQuery is loaded before this script is included in your file:' + e );
 }
