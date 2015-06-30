@@ -10,6 +10,7 @@ var charMaps = {
   "ki": {"q":"ĩ", "Q":"Ĩ", "x":"ũ", "X":"Ũ"},
   "mo": {"c":"ɩ", "C":"Ɩ", "j":"", "J":"", "q":"ɛ", "Q":"Ɛ", "x":"ʋ", "X":"Ʋ"},
   "sw": {"q":"", "Q":"", "x":"", "X":""},
+  "wo": {"q":"ë", "Q":"Ë", "x":"ñ", "X":"Ñ", "v":"ŋ", "V":"Ŋ"},
   "yo": {"q":"ẹ", "Q":"Ẹ", "x":"ọ", "X":"Ọ", "v":"ṣ", "V":"Ṣ"},
 };
 function getName(lang){
@@ -149,24 +150,8 @@ function showHints(letterSubs) {
   return hints;
 }
 
-
 try{
-  var pl = getLanguage();
-}catch(e){
-  console.log('getLanguage() not defined so getting language from document');
-  function getLanguage() {
-    var pl = document.documentElement.lang;
-    if (pl) {
-      return pl;
-    }else {
-      console.log('No language detected in this page so set to default: ak');
-      return 'ak';
-    }
-  }
-}
-var letterSubs = getMaps(getLanguage());
-
-try{
+  var letterSubs = getMaps(getLanguage());
   $(document).ready(function(event){
     $('textarea, input').each(function(){ $(this).attr("placeholder", $(this).attr("placeholder") + ': ' + showHints(letterSubs));});
     $(document).delegate("input, textarea", "keyup", function(event){
