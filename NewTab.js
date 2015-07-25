@@ -1,16 +1,3 @@
-
-
-
-function getLanguage() {
-  if (localStorage.lang) {
-    return localStorage.lang;
-  }else {
-    return 'ak';
-  }
-}
-
-
-
 function startTime() 
 {
     var today=new Date();
@@ -30,7 +17,7 @@ function checkTime(i)
 }
 
 
-function getNotification(){
+function updateNewTabPage(){
  // chrome.runtime.sendMessage({method: "getInspiration"}, function(response) {
     language = getLanguage();
     inspiration = getInspiration();
@@ -45,12 +32,9 @@ function getNotification(){
 }
 
 function backgroundRandom(){
-    var bgArray = ['1.webp','2.webp','3.webp','4.webp','5.webp'];
-    // If you have defined a path for the images
+    var bgArray = ['1.webp','2.webp','3.webp', '4.webp', '5.webp', '6.webp'];
     var path = 'images/';
     var bg = "url('"+path+bgArray[Math.floor(Math.random() * bgArray.length)]+"')";
-
-    // then you can put it right before the variable 'bg'
     $('body').css('background-image', bg);
 }
 
@@ -64,12 +48,10 @@ $('.share').click(function(event) {
     window.open(url+encodeURIComponent(txt)+ " %23"+(data["language"]).replace(" ","_") +" %23kasahorow @kasahorow");
 
   });
-  //var data = getData(localStorage.lang);
 });
 
 
 $('.translate').click(function(event) {
-
   var txt = $('#inputText').val();
   var url = $(this).attr('service');
   var languageSymbol = getLanguage();
@@ -77,22 +59,13 @@ $('.translate').click(function(event) {
 });
 
 
-
-//inspiration
-
-
-
 //to update inspiration locally instead of multiple json calls.
 function updateInspiration() {
-  var by ;
-  var day ;
+  var by;
+  var day;
   var inspiration ;
   var language = getLanguage();
-
   var xhr = new XMLHttpRequest();
-    //gets the JSON feed
-
-      //geting da value
   var now = new Date();
   var da = ('0' +(now.getMonth()+1)).slice(-2)+('0' +now.getDate()).slice(-2);
   url = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome&da='+da;
@@ -115,48 +88,31 @@ function updateInspiration() {
                 localStorage.inspiration = inspiration;
                 localStorage.updateDate = (new Date()).toDateString();
                 localStorage.inspiration_language = language;
-                
-
             }
     };
     xhr.send();
-
-  return 0;
-}
-
-if (!localStorage.updateDate){
-  updateInspiration();
+  return [getlanguageName(language) + ' kasahorow', 'kasahorow', now.getFullYear() + '-' + da.slice(0, 2) + '-' + da.slice(-2)];
 }
 
 function getInspiration(){
   var today = (new Date()).toDateString();
-
   if (!localStorage.updateDate){
-
     return updateInspiration();
-  }
-  else if (localStorage.updateDate !== today){
+  }else if (localStorage.updateDate !== today){
     return updateInspiration();
-
   }else if(localStorage.inspiration_language != getLanguage()){
-    
     return updateInspiration();
-  }
-  else{
+  }else{
     return [localStorage.inspiration, localStorage.by,localStorage.day];
   }
-
 }
-
-
-
-
-
 
 //called on page load
 window.addEventListener('load', startTime);
-window.addEventListener('load', getNotification);
+window.addEventListener('load', updateNewTabPage);
 window.addEventListener('load', backgroundRandom);
 
-
-
+if (!localStorage.updateDate){
+  updateInspiration();
+  updateNewTabPage();
+}

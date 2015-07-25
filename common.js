@@ -113,9 +113,12 @@ function getData(lang) {
 
 function languageTitle(lang) {
   data = getData(lang);
-
   return data.name;
+}
 
+function getlanguageName(lang) {
+  data = getData(lang);
+  return data.language;
 }
 
 function translationHandler(info, tab) {
@@ -199,55 +202,4 @@ if (millisTill10 < 0) {
 //change UI
 setTimeout(function(){  if(localStorage.isActivated){ changeBadgeText() }  }, millisTill10);
 changeBadgeText();
-
-
-
-
-
-
-//to update inspiration locally instead of multiple json calls.
-function updateInspiration() {
-  var by ;
-  var day ;
-  var inspiration ;
-  var language = getLanguage();
-
-  var xhr = new XMLHttpRequest();
-    //gets the JSON feed
-
-  //geting da value
-  var now = new Date();
-  var da = ('0' +(now.getMonth()+1)).slice(-2)+('0' +now.getDate()).slice(-2);
-  url = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome&da='+da;
-  console.log("el url ahw"+ url);
-  //notification_url = 'http://' + language + '.kasahorow.org/app/b' +'?utm_campaign=read&utm_medium='+ language + '&utm_source=chrome';
-
-  //synchronization true, as not to show tab or pop up before changing the notification.
-  xhr.open("GET", url, true);
-  xhr.onreadystatechange=function() {
-          //Works after getting the feed
-            if (xhr.readyState == 4 && this.status == 200) {
-                var res = JSON.parse(xhr.response);
-                by = res["by"];
-                day = res["day"];
-                inspiration = res["inspiration"];
-                
-                localStorage.by = by;
-                localStorage.day = day;
-                localStorage.inspiration = inspiration;
-                localStorage.updateDate = (new Date()).toDateString();
-                localStorage.inspiration_language = language;
-                
-
-            }
-    };
-    xhr.send();
-
-  return 0;
-}
-
-if (!localStorage.updateDate){
-  updateInspiration();
-}
-
 
