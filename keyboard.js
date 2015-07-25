@@ -13,6 +13,8 @@ var charMaps = {
   "wo": {"q":"ë", "Q":"Ë", "x":"ñ", "X":"Ñ", "v":"ŋ", "V":"Ŋ"},
   "yo": {"q":"ẹ", "Q":"Ẹ", "x":"ọ", "X":"Ọ", "v":"ṣ", "V":"Ṣ"},
 };
+
+
 function getName(lang){
   name = 'kasahorow';
   return name;
