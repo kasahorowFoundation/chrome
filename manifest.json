@@ -2,7 +2,7 @@
   "name": "kasahorow",
   "short_name": "kasahorow",
   "description": "Learn something true. Every day.",
-  "version": "2015.7.25",
+  "version": "2016.7.24",
   "manifest_version": 2,
 
   "omnibox": { "keyword" : "kw" },
