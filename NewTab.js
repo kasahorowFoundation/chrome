@@ -69,7 +69,6 @@ function updateInspiration() {
   var now = new Date();
   var da = ('0' +(now.getMonth()+1)).slice(-2)+('0' +now.getDate()).slice(-2);
   url = 'http://' + language + '.kasahorow.org/app/m?format=json&source=chrome&da='+da;
-  console.log("el url ahw"+ url);
 
   //notification_url = 'http://' + language + '.kasahorow.org/app/b' +'?utm_campaign=read&utm_medium='+ language + '&utm_source=chrome';
 

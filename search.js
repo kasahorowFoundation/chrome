@@ -1,7 +1,7 @@
 var Query = {
   createQuery: function() {
     var query = $('#options').serialize();
-console.log(query)
+    //console.log(query)
     return query;
   }
 }
