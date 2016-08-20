@@ -1,4 +1,5 @@
-kasahorow Chrome Extension
+
+[kasahorow Chrome Extension](https://chrome.google.com/webstore/detail/kasahorow/pmdjeaiebnlfpceghbmpnnhjkmepodec)
 ===================
 
 Learn something true. Every day.
