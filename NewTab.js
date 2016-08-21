@@ -59,6 +59,13 @@ $('.translate').click(function(event) {
 });
 
 
+$('.watch').click(function(event) {
+  var languageSymbol = getLanguage();
+  url = "http://"+ languageSymbol +".kasahorow.org/tv"
+  window.open(url);
+});
+
+
 //to update inspiration locally instead of multiple json calls.
 function updateInspiration() {
   var by;

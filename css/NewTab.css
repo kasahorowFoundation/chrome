@@ -37,8 +37,8 @@ hr
   background: #BADA55;
   width: 40px;
   height: 40px;
-  	padding: 5px;
-	border-color: transparent;
+  padding: 5px;
+  border-color: transparent;
 
   }
 
@@ -47,17 +47,24 @@ hr
   	width: 50px;
 	height: 50px;
 	border-top-width: 0px;
-		padding: 5px;
-
+	padding: 5px;
 	padding-top: 0px;
   }
 
+
+.watch{
+  	width: 50px;
+	height: 50px;
+	border-top-width: 0px;
+	padding: 5px;
+	padding-top: 0px;
+  }
 #footer{
 	height: 35px;
 	text-align: center;
 	padding-top: 10px;
 	margin: 0 auto;
-	width: 110px;
+	width: 170px;
 }
 
 #footer img{
