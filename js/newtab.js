@@ -33,15 +33,13 @@ function updateNewTabPage(){
 
 function backgroundRandom(){
     var bgArray = ['1.webp','2.webp','3.webp', '4.webp', '5.webp', '6.webp'];
-    var path = '../images/';
+    var path = 'img/';
     var bg = "url('"+path+bgArray[Math.floor(Math.random() * bgArray.length)]+"')";
-    $('html').css('background-image', bg);
+    $('.intro').css('background-image', bg);
 }
 
 
-$('.repeat-btn').click(function(event) {
-  backgroundRandom();
-});
+
 $('.share').click(function(event) {
   var txt = $('#inputText').val();
   var url = $(this).attr('service');
@@ -113,14 +111,6 @@ function getInspiration(){
   }else{
     return [localStorage.inspiration, localStorage.by,localStorage.day];
   }
-}
-
-
-
-/** Open Chrome Internal URLS **/
-
-function openNetInternals() { 
-  chrome.tabs.create({url: 'chrome://net-internals/'});
 }
 
 //called on page load

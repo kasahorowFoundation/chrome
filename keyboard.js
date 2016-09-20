@@ -51,14 +51,17 @@ function search_dictionary(e) {
 
 }
 
-$(document).on("taphold",function(e){
-  search_dictionary(e);
-});
+/* Don't search dictionary for now
 
-$(document).dblclick(function(e) {
-  search_dictionary(e);
-}); 
+  $(document).on("taphold",function(e){
+    search_dictionary(e);
+  });
 
+  $(document).dblclick(function(e) {
+    search_dictionary(e);
+  }); 
+
+*/
 
 
 
