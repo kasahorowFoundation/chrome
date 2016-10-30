@@ -35,6 +35,7 @@
 			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
 				<li><a href="#head" class="active">Home</a></li>
 				<li><a href="#keyboard" >Keyboard</a></li>
+				<li><a href="#dictionary" >Dictionary</a></li>
 				<li><a href="#about">About</a></li> 
 
 
@@ -199,6 +200,33 @@
 
 	</div>
 </section>
+
+
+<!--  (Keyboard) section -->
+<section class="section" id="dictionary">
+	<div class="container">
+	
+		<h2 class="text-center title">Kasahorow Dictionary</h2>
+		<!-- work on search_dictionary on keyboard.js -->
+
+		<div class="row">
+			<div class="col-sm-8 col-sm-offset-2 text-center">
+
+					<!--78 is max length, as our code adds @kasahorow and Hashtags for the language used-->
+        <textarea maxlength="78" id="dict_text" class="keyboard_input" placeholder="Write"  ></textarea>
+				<ul class="list-inline list-social">
+
+		          <li><img width="35" height="35" src="images/twitter-icon.webp" style="display:block; margin: 0 auto;" border="0" alt="Twitter" title="Tweet" class="share" service="https://twitter.com/intent/tweet?url=http://goo.gl/HMp5LU&text=" /></li>
+		          
+		          <li><img width="34" height="34" src="icon128.png" style="display:block; margin: 0 auto;" border="0" alt="Dictionary" title="Dictionary" class="dictionary" service="http://ak.kasahorow.org/app/d?kw=" /></li>
+		
+				</ul>
+			</div>
+		</div>
+
+	</div>
+</section>
+
 
 
 	<!-- Load js libs only when the page is loaded. -->

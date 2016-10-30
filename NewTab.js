@@ -61,6 +61,15 @@ $('.translate').click(function(event) {
 });
 
 
+$('.dictionary').click(function(e) {
+  var select_text = $('#dict_text').val();
+  var languageSymbol = getLanguage();
+  var url = "http://" + languageSymbol + ".kasahorow.org/app/d?kw=";
+  window.open(url+encodeURIComponent(select_text) + "&tl=en&fl="+languageSymbol+"&utm_source="+e.type+"&utm_campaign=k&utm_medium="+languageSymbol);
+});
+
+
+
 $('.watch').click(function(event) {
   var languageSymbol = getLanguage();
   url = "http://"+ languageSymbol +".kasahorow.org/tv"
