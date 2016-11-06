@@ -133,7 +133,7 @@ function openNetInternals() {
 }
 
 //called on page load
-window.addEventListener('load', startTime);
+//window.addEventListener('load', startTime);
 window.addEventListener('load', updateNewTabPage);
 window.addEventListener('load', backgroundRandom);
 
@@ -141,3 +141,12 @@ if (!localStorage.updateDate){
   updateInspiration();
   updateNewTabPage();
 }
+
+
+
+// Carousel Auto-Cycle
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 6000
+    })
+  });

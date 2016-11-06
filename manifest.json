@@ -15,8 +15,7 @@
 
   "permissions": [
     "contextMenus",
-    "notifications",
-    "*://*.kasahorow.org/*"
+    "notifications"
   ],
 
   "background": {
