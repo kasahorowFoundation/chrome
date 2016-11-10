@@ -20,6 +20,7 @@ function checkTime(i)
 function updateNewTabPage(){
  // chrome.runtime.sendMessage({method: "getInspiration"}, function(response) {
     language = getLanguage();
+    $(".lang-name").text(getlanguageName(language))
     inspiration = getInspiration();
 
     $('#inspiration').text(inspiration[0]);
