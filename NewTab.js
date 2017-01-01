@@ -35,7 +35,9 @@ function updateNewTabPage(){
 function backgroundRandom(){
     var bgArray = ['1.webp','2.webp','3.webp', '4.webp', '5.webp', '6.webp'];
     var path = '../images/';
-    var bg = "url('"+path+bgArray[Math.floor(Math.random() * bgArray.length)]+"')";
+    var background = path+bgArray[Math.floor(Math.random() * bgArray.length)];
+    var bg = "linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('"+background+"')";
+
     $('html').css('background-image', bg);
 }
 
